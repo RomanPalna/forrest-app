@@ -1,0 +1,35 @@
+.forrest__nav {
+text-align: center;
+
+    &--text {
+        margin-top: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #E4E4E4;
+    }
+
+    &--btn {
+       display: flex;
+       justify-content: space-around;
+       margin-top: 87px;
+    }
+
+    &--link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100px;
+        height: 100px; 
+        border-radius: 50%;
+        background: rgba(56, 163, 165, 0.3);
+        font-style: normal;
+        font-weight: 200;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+}
