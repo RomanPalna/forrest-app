@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
+import Social from "./components/Social/Social";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/full=price" element={<div>Full price</div>} />
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
+      <Social />
     </>
   );
 }
