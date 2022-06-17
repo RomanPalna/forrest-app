@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
 @import '../../node_modules/normalize.css/normalize.css';
 @import './utils/main-styles.scss';
 @import './main-page/header.scss';
 @import './main-page/nav-buttons.scss';
-@import './main-page/social.scss'
+@import './main-page/social.scss';
+@import './Modal/modal.scss';
+@import './non-alcohol/non-alcohol.scss'
