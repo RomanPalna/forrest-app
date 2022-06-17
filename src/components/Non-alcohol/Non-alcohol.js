@@ -3,10 +3,12 @@ import Container from "../Container/Continer";
 import Coffee from "../../images/drinks/coffee.svg";
 import Lemonade from "../../images/drinks/Cocktail.svg";
 import ColdDrink from "../../images/drinks/Glass.svg";
+import ImageSlider from "../ImageSlider/ImageSlider";
 
 export default function NonAlcohol() {
   return (
     <Container>
+      <ImageSlider />
       <ul className="forrest__hotdrinks">
         <li className="forrest__hotdrinks--item">
           <Link className="forrest__hotdrinks--link" to="/hot-drinks">
