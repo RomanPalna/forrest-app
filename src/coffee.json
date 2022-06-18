@@ -1,0 +1,34 @@
+{
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "litres": 30,
+      "cost": 30
+    },
+    {
+      "id": 2,
+      "name": "Americano",
+      "litres": 60,
+      "cost": 30
+    },
+    {
+      "id": 3,
+      "name": "Espresso-Makiato",
+      "litres": 30,
+      "cost": 45
+    },
+    {
+      "id": 4,
+      "name": "Capuccino",
+      "litres": 170,
+      "cost": 45
+    },
+    {
+      "id": 5,
+      "name": "Latte",
+      "litres": 250,
+      "cost": 60
+    }
+  ]
+}

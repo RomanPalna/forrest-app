@@ -1,14 +1,14 @@
 import Modal from "../../Modal/Modal";
+import coffee from "../../../coffee.json";
+import HotDrinksList from "./HotDrinksList";
 
 export default function HotDrinks() {
   return (
     <Modal>
-      <ul>
-        <li>Espresso</li>
-        <li>Americano</li>
-        <li>Doppio</li>
-        <li>Cappucino</li>
-        <li>Latte</li>
+      <ul className="forrest__coffee">
+        {coffee.coffee.map((drink) => {
+          return <HotDrinksList key={drink.id} props={drink} />;
+        })}
       </ul>
     </Modal>
   );

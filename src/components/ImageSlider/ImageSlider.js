@@ -66,7 +66,7 @@ export default function ImageSlider() {
             data={data}
             time={3000}
             width="450px"
-            height="400px"
+            height="350px"
             captionStyle={captionStyle}
             radius="10px"
             // slideNumber={true}
@@ -78,8 +78,8 @@ export default function ImageSlider() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-            thumbnails={true}
-            thumbnailWidth="100px"
+            // thumbnails={true}
+            // thumbnailWidth="100px"
             style={{
               textAlign: "center",
               maxWidth: "850px",
