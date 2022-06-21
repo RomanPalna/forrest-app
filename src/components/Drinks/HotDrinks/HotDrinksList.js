@@ -3,8 +3,8 @@ export default function HotDrinksList({ props }) {
   return (
     <tr>
       <td className="forrest__coffee--name">{name}</td>
-      <td>{litres} мл.</td>
-      <td>{cost} грн.</td>
+      <td>{litres}</td>
+      <td>{cost}</td>
     </tr>
   );
 }

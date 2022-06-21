@@ -25,6 +25,7 @@ export default class Modal extends Component {
   };
 
   goBack() {
+    // this.navigate("/non-alcohol");
     console.log("Should go back");
   }
 
