@@ -7,5 +7,9 @@ export default function BackBtn() {
     navigate("/non-alcohol");
   };
 
-  return <button onClick={goBack}>Go Back</button>;
+  return (
+    <button className="forrest__coffee--backBtn" onClick={goBack}>
+      Go Back
+    </button>
+  );
 }
