@@ -13,14 +13,20 @@ export default class Modal extends Component {
   }
 
   handleKeyDown = (e) => {
-    if (e.code === "Escape") {
-      return this.props.onClose();
-    }
+    // if (e.code === "Escape") {
+    //   return this.context.router.history.goBack();
+    // }
+    this.goBack();
   };
 
-  hanleBackdropClick = (e) => {
-    if (e.target === e.currentTarget) this.props.onClose();
+  hanleBackdropClick = () => {
+    this.goBack();
+    // if (e.target === e.currentTarget) this.props.goBack();
   };
+
+  goBack() {
+    console.log("Should go back");
+  }
 
   render() {
     return createPortal(
