@@ -1,6 +1,6 @@
 import { useState } from "react";
-import HotDrinks from "../../../components/Drinks/HotDrinks/Hotdrinks";
-import Modal from "../../../components/Modal/Modal";
+import HotDrinks from "../../Drinks/HotDrinks/Hotdrinks";
+import Modal from "../../Modal/Modal";
 import Coffee from "../../../images/drinks/coffee.svg";
 
 export default function CoffeeTea() {

@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import HotDrinks from "./components/Drinks/HotDrinks/Hotdrinks";
 import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
 import NonAlcohol from "./components/Non-alcohol/Non-alcohol";
