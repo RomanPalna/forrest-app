@@ -13,6 +13,9 @@
     
 
     &--head {
+      position: sticky;
+      top: 0;
+       
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -21,7 +24,7 @@
         background-color: inherit;
         color: inherit;
         text-align: left;
-        margin: 15px 0;
+        padding: 15px 0;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 300;
@@ -31,21 +34,38 @@
 
     &--name {
         text-align: left;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 12px;
         font-weight: 400;
         line-height: 15px;
         letter-spacing: 0em;
     }
-           &--backBtn {
-               position: absolute;
-               top: 10%;
-    
-               width: 10%;
-               color: #E4E4E4;
-               background-color: #1E1E1E;
-               border-style: none;
-           }
+
+    &--litres {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 15px;
+    letter-spacing: 0em;
+    }
+
+    &--cost {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    }
+
+     &--backBtn {
+        position: absolute;
+        top: 10%;
+        width: 10%;
+        color: #E4E4E4;
+        background-color: #1E1E1E;
+        border-style: none;
+    }
  
 }
 
@@ -56,6 +76,14 @@ th {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #1E1E1E;
+    color: #E4E4E4;
+   
 }
 
 td {
@@ -77,4 +105,13 @@ thead th:nth-child(3) {
 th,
 td {
     padding: 20px;
+}
+
+tr {
+   
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
 }
