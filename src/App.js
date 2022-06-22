@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainPage />} />
         <Route path="/non-alcohol" element={<NonAlcohol />} />
-        <Route path="/hot-drinks" element={<HotDrinks />} />
         <Route path="/full=price" element={<div>Full price</div>} />
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
