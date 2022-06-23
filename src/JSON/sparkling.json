@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Шампанське Moet Chandon «Brut Imperial» біле брют",
+    "litres": 750,
+    "cost": 3900
+  },
+  {
+    "id": 2,
+    "name": "Шампанське Mumm, \"Cordon Rouge\" AOC біле брют",
+    "litres": 750,
+    "cost": 2300
+  },
+  {
+    "id": 3,
+    "name": "Шампанське Lancelot Pienne Cuvee de la table ronde біле брют",
+    "litres": 750,
+    "cost": 2900
+  },
+  {
+    "id": 4,
+    "name": "Шампанське Mumm, Brut Rose AOC рожеве брют",
+    "litres": 750,
+    "cost": 2300
+  },
+  {
+    "id": 7,
+    "name": "Вино ігристе Rocca Rossa Pietra Miliare Spumante DOC біле сухе",
+    "litres": 750,
+    "cost": 400
+  },
+  {
+    "id": 8,
+    "name": "Вино ігристе Gran Soleto Prosecco DOC Spumante Extra Dry біле сухе",
+    "litres": 750,
+    "cost": 350
+  },
+  {
+    "id": 9,
+    "name": "Вино ігристе Mas De Fer Rive Di Soligo Valdobbiadene Prosecco Superiore DOCG біле брют",
+    "litres": 750,
+    "cost": 950
+  },
+  {
+    "id": 10,
+    "name": "Вино ігристе Asti \"Filipetti\" DOCG біле солодке",
+    "litres": 750,
+    "cost": 600
+  },
+  {
+    "id": 11,
+    "name": "Вино ігристе Cava Masia de la Luz DO біле брют",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 12,
+    "name": "Вино ігристе CAVA Masia de la Luz Rose DO біле сухе",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 13,
+    "name": "Вино ігристе Cavicchioli Lambrusco Bianco dell'Emilia IGT Dolce біле напівсолодке",
+    "litres": 750,
+    "cost": 350
+  }
+]
