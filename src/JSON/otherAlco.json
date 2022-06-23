@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ром Appleton Estate",
+    "litres": 50,
+    "cost": 71
+  },
+  {
+    "id": 2,
+    "name": "Ром Sailor Jerry",
+    "litres": 50,
+    "cost": 68
+  },
+  {
+    "id": 3,
+    "name": "Ром Angostura Reserva",
+    "litres": 50,
+    "cost": 50
+  },
+  {
+    "id": 4,
+    "name": "Текіла Olmeca Altos Plata",
+    "litres": 50,
+    "cost": 104
+  },
+  {
+    "id": 5,
+    "name": "ТекілаOlmeca Altos Reposado",
+    "litres": 50,
+    "cost": 114
+  },
+  {
+    "id": 6,
+    "name": "Джин Beefeater",
+    "litres": 50,
+    "cost": 73
+  },
+  {
+    "id": 7,
+    "name": "Джин Hendrick's",
+    "litres": 50,
+    "cost": 143
+  },
+  {
+    "id": 8,
+    "name": "Настоянка Becherovka",
+    "litres": 50,
+    "cost": 60
+  },
+  {
+    "id": 9,
+    "name": "Настоянка Jagermaister",
+    "litres": 50,
+    "cost": 75
+  },
+  {
+    "id": 10,
+    "name": "Настоянка Campari",
+    "litres": 50,
+    "cost": 50
+  },
+  {
+    "id": 11,
+    "name": "Настоянка Amaro di Angostura",
+    "litres": 50,
+    "cost": 54
+  },
+  {
+    "id": 12,
+    "name": "Лікер Cointreau",
+    "litres": 50,
+    "cost": 80
+  },
+  {
+    "id": 13,
+    "name": "Вермут Martini Bianco",
+    "litres": 50,
+    "cost": 35
+  },
+  {
+    "id": 14,
+    "name": "Вермут Martini Rosso",
+    "litres": 50,
+    "cost": 35
+  },
+  {
+    "id": 15,
+    "name": "Вермут Martini Fiero",
+    "litres": 50,
+    "cost": 40
+  },
+  {
+    "id": 16,
+    "name": "Вермут Lillet Blanc",
+    "litres": 50,
+    "cost": 50
+  }
+]
