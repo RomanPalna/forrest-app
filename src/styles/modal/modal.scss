@@ -33,3 +33,17 @@
     transform: scale(1);
     background-color: #1E1E1E;
 }
+
+.modal__button {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    background-color: #1E1E1E;
+    color: #E4E4E4;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+
+}
