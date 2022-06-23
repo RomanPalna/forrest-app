@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Pinot Grigio DOC, Monte del Fra біле сухе // Італія",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 2,
+    "name": "Monte Del Fra Custoza DOC біле сухе // Італія",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 3,
+    "name": "Roberto Sarotto, \"Aurora\", Gavi DOCG біле сухе // Італія",
+    "litres": 750,
+    "cost": 650
+  },
+  {
+    "id": 4,
+    "name": "Tenute Cali, Graffetta Grillo Sicilia DOC біле сухе // Італія",
+    "litres": 750,
+    "cost": 750
+  },
+  {
+    "id": 7,
+    "name": "Tor D.Colle Pecorino Terre di Chieti IGT біле сухе // Італія",
+    "litres": 750,
+    "cost": 390
+  },
+  {
+    "id": 8,
+    "name": "Rene Mure, Gewurztraminer Orchidees Sauvages AOC біле напівсухе // Франція",
+    "litres": 750,
+    "cost": 990
+  },
+  {
+    "id": 9,
+    "name": "Domaine des Malandes, Chablis AOC біле сухе // Франція",
+    "litres": 750,
+    "cost": 1200
+  },
+  {
+    "id": 10,
+    "name": "Sichel Sauternes біле солодке // Франція",
+    "litres": 375,
+    "cost": 1100
+  },
+  {
+    "id": 11,
+    "name": "Domaine du Bois Perron, Muscadet Sevre &amp; Maine Sur Lie AOP біле сухе // Франція",
+    "litres": 750,
+    "cost": 520
+  },
+  {
+    "id": 12,
+    "name": "Chevalier de France, Blanc Moelleux біле напівсолодке // Франція",
+    "litres": 750,
+    "cost": 300
+  },
+  {
+    "id": 13,
+    "name": "Woodhaven Chardonnay California біле сухе // США",
+    "litres": 750,
+    "cost": 590
+  },
+  {
+    "id": 14,
+    "name": "Estancia Mendoza, Chardonnay біле сухе // Аргентина",
+    "litres": 750,
+    "cost": 400
+  },
+  {
+    "id": 16,
+    "name": "Namaqua, Chenin Blanc біле сухе // ПАР",
+    "litres": 750,
+    "cost": 400
+  },
+  {
+    "id": 17,
+    "name": "Villa Tinta, Sukholimanskiy біле сухе // Україна",
+    "litres": 750,
+    "cost": 250
+  }
+]
