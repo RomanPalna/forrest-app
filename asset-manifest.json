@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/forrest-app/static/css/main.84d92c05.css",
+    "main.css": "/forrest-app/static/css/main.fb54088a.css",
     "main.js": "/forrest-app/static/js/main.7b9a4dcb.js",
     "static/media/Sigar.JPG": "/forrest-app/static/media/Sigar.a0ad31c765b452b4b305.JPG",
     "static/media/BasilBeauty.JPG": "/forrest-app/static/media/BasilBeauty.4d062b46c24c56231529.JPG",
@@ -28,11 +28,11 @@
     "static/media/phone.svg": "/forrest-app/static/media/phone.dbe7620c003f94cc61906573c104ddbf.svg",
     "static/media/Facebook.svg": "/forrest-app/static/media/Facebook.f6c48646e2ca9b56f3bf2bb374cb4c81.svg",
     "index.html": "/forrest-app/index.html",
-    "main.84d92c05.css.map": "/forrest-app/static/css/main.84d92c05.css.map",
+    "main.fb54088a.css.map": "/forrest-app/static/css/main.fb54088a.css.map",
     "main.7b9a4dcb.js.map": "/forrest-app/static/js/main.7b9a4dcb.js.map"
   },
   "entrypoints": [
-    "static/css/main.84d92c05.css",
+    "static/css/main.fb54088a.css",
     "static/js/main.7b9a4dcb.js"
   ]
 }
