@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "Monte del Fra, Bardolino DOC червоне сухе // Італія",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 2,
+    "name": "Tor D.Colle Biferno Riserva DOC червоне сухе // Італія",
+    "litres": 750,
+    "cost": 390
+  },
+  {
+    "id": 3,
+    "name": "Monte del Fra, Valpolicella Classico Superiore Ripasso червоне сухе // Італія",
+    "litres": 750,
+    "cost": 970
+  },
+  {
+    "id": 4,
+    "name": "Roberto Sarotto, Barbera d'Asti Superiore DOCG червоне сухе // Італія",
+    "litres": 750,
+    "cost": 710
+  },
+  {
+    "id": 7,
+    "name": "Roberto Sarotto, Barolo DOCG червоне сухе // Італія",
+    "litres": 750,
+    "cost": 1600
+  },
+  {
+    "id": 8,
+    "name": "Villa Puccini, Chianti Classico Riserva DOCG червоне сухе // Італія",
+    "litres": 750,
+    "cost": 850
+  },
+  {
+    "id": 9,
+    "name": "Cantina Tollo, \"Colle Cavalieri\" Montepulciano d'Abruzzo DOP червоне сухе // Італія",
+    "litres": 750,
+    "cost": 700
+  },
+  {
+    "id": 10,
+    "name": "Graffetta Nero d'Avola Sicilia DOC червоне сухе // Італія",
+    "litres": 750,
+    "cost": 700
+  },
+  {
+    "id": 11,
+    "name": "Chateau Moulin de Mallet, Bordeaux AOC червоне сухе // Франція",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 12,
+    "name": "Sichel, Bordeaux Rouge AOC червоне сухе // Франція",
+    "litres": 750,
+    "cost": 850
+  },
+  {
+    "id": 13,
+    "name": "Chateau Pontet Barrail, Medoc Cru Bourgeois червоне сухе // Франція",
+    "litres": 750,
+    "cost": 1250
+  },
+  {
+    "id": 14,
+    "name": "Chevalier de France Rouge Moelleux червоне напівсолодке // Франція",
+    "litres": 750,
+    "cost": 300
+  },
+  {
+    "id": 16,
+    "name": "Rioja Muga Reserva DO червоне сухе // Іспанія",
+    "litres": 750,
+    "cost": 1600
+  },
+  {
+    "id": 17,
+    "name": "Marques de Penamonte Coleccion Privada DO червоне сухе // Іспанія",
+    "litres": 750,
+    "cost": 1200
+  },
+  {
+    "id": 18,
+    "name": "Woodhaven Red Zinfandel California червоне сухе // США",
+    "litres": 750,
+    "cost": 590
+  },
+  {
+    "id": 19,
+    "name": "Gonzalez Byass, Veramonte Carmenere червоне сухе // Чилі",
+    "litres": 750,
+    "cost": 550
+  },
+  {
+    "id": 20,
+    "name": "Estancia Mendoza Bonarda червоне сухе // Аргентина",
+    "litres": 750,
+    "cost": 400
+  },
+  {
+    "id": 21,
+    "name": "Estancia Mendoza Malbec Roble червоне сухе // Аргентина",
+    "litres": 750,
+    "cost": 450
+  },
+  {
+    "id": 22,
+    "name": "Namaqua Pinotage червоне сухе // ПАР",
+    "litres": 750,
+    "cost": 400
+  },
+  {
+    "id": 23,
+    "name": "Villa Tinta, Cabernet червоне сухе // Україна",
+    "litres": 750,
+    "cost": 250
+  },
+  {
+    "id": 24,
+    "name": "Villa Tinta, Odessa Black червоне сухе // Україна",
+    "litres": 750,
+    "cost": 250
+  },
+  {
+    "id": 25,
+    "name": "Dow's Fine Ruby Port червоне кріплене // Португалія",
+    "litres": 750,
+    "cost": 800
+  },
+  {
+    "id": 26,
+    "name": "Emilio Lustau Pedro Ximenez San Emilio Sherry кріплене // Іспанія",
+    "litres": 750,
+    "cost": 1400
+  }
+]
