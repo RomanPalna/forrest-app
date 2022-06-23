@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Hugo\n// Хьюго",
+    "litres": 140,
+    "cost": 100
+  },
+  {
+    "id": 2,
+    "name": "Passion Spritz\n// Пешн Шпріц",
+    "litres": 150,
+    "cost": 130
+  },
+  {
+    "id": 3,
+    "name": "Aperol Spritz\n// Апероль Шпріц",
+    "litres": 180,
+    "cost": 120
+  },
+  {
+    "id": 4,
+    "name": "Violet Spritz\n// Вайолет Шпріц",
+    "litres": 155,
+    "cost": 110
+  },
+  {
+    "id": 5,
+    "name": "For Rest Spritz\n// Фор Рест Шприц",
+    "litres": 200,
+    "cost": 140
+  },
+  {
+    "id": 6,
+    "name": "Sunset\n// Сансет",
+    "litres": 175,
+    "cost": 130
+  },
+  {
+    "id": 7,
+    "name": "Spicy Dream \n// Спайсі Дрім",
+    "litres": 110,
+    "cost": 135
+  },
+  {
+    "id": 8,
+    "name": "Honeybee\n// Ханібі",
+    "litres": 100,
+    "cost": 110
+  },
+  {
+    "id": 9,
+    "name": "Porn Star Martini\n// Порн Стар Мартіні",
+    "litres": 160,
+    "cost": 140
+  },
+  {
+    "id": 10,
+    "name": "Basil Beauty\n// Безіл Бьюті",
+    "litres": 150,
+    "cost": 140
+  },
+  {
+    "id": 11,
+    "name": "Paradise Daiquiri\n// Парадайз Дайкірі",
+    "litres": 145,
+    "cost": 140
+  },
+  {
+    "id": 12,
+    "name": "Banana Daiquiri\n// Банана Дайкірі",
+    "litres": 130,
+    "cost": 140
+  },
+  {
+    "id": 13,
+    "name": "Mai Tai\n// Май Тай",
+    "litres": 105,
+    "cost": 130
+  },
+  {
+    "id": 14,
+    "name": "Whisky Sour\n// Віскі Сауер",
+    "litres": 100,
+    "cost": 110
+  },
+  {
+    "id": 15,
+    "name": "Mango Sour\n// Манго Сауер",
+    "litres": 100,
+    "cost": 130
+  },
+  {
+    "id": 16,
+    "name": "Carrot 4 Parrot\n// Керрот фо Перрот",
+    "litres": 110,
+    "cost": 135
+  },
+  {
+    "id": 17,
+    "name": "Bloody Mary\n// Бладі Мері",
+    "litres": 240,
+    "cost": 130
+  },
+  {
+    "id": 18,
+    "name": "Gin Garden\n// Джин Гарден",
+    "litres": 135,
+    "cost": 130
+  },
+  {
+    "id": 19,
+    "name": "Churchil's cigar\n//Сигара Черчіля",
+    "litres": 125,
+    "cost": 150
+  },
+  {
+    "id": 20,
+    "name": "Negroni\n// Негроні",
+    "litres": 90,
+    "cost": 130
+  },
+  {
+    "id": 21,
+    "name": "Prospector\n// Проспектор",
+    "litres": 95,
+    "cost": 135
+  }
+]
