@@ -1,17 +1,14 @@
 import Container from "../Container/Continer";
 import ImageSlider from "../ImageSlider/ImageSlider";
-import Coffeetea from "./elements/CoffeeTea";
-import ColdDrinks from "./elements/ColdDrinks";
-import CraftLemonades from "./elements/CraftLemonades";
+import NonAlcoholElements from "./elements/NonAlcoholElements";
 
 export default function NonAlcohol() {
   return (
     <Container>
       <ImageSlider />
+
       <ul className="forrest__hotdrinks">
-        <ColdDrinks />
-        <Coffeetea />
-        <CraftLemonades />
+        <NonAlcoholElements />
       </ul>
     </Container>
   );
