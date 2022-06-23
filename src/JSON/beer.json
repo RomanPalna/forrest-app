@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Guinness Original пляшкове пиво темне",
+    "litres": 330,
+    "cost": 95
+  },
+  {
+    "id": 2,
+    "name": "Warshtainer пляшкове пиво світле ",
+    "litres": 330,
+    "cost": 95
+  },
+  {
+    "id": 3,
+    "name": "Grimbergen Blanche розливне пиво біле нефільтроване",
+    "litres": 330,
+    "cost": 65
+  },
+  {
+    "id": 4,
+    "name": "Grimbergen Blanche розливне пиво біле нефільтроване",
+    "litres": 500,
+    "cost": 95
+  },
+  {
+    "id": 5,
+    "name": "Grimbergen Double-Abree Розливне пиво темне нефільтроване",
+    "litres": 330,
+    "cost": 65
+  },
+  {
+    "id": 6,
+    "name": "Grimbergen Double-Abree Розливне пиво темне нефільтроване",
+    "litres": 500,
+    "cost": 95
+  },
+  {
+    "id": 7,
+    "name": "Львівське Dunkel розливне пиво темне",
+    "litres": 330,
+    "cost": 45
+  },
+  {
+    "id": 8,
+    "name": "Львівське Dunkel розливне пиво темне",
+    "litres": 500,
+    "cost": 55
+  },
+  {
+    "id": 9,
+    "name": "Carlsberg розливне пиво світле",
+    "litres": 330,
+    "cost": 45
+  },
+  {
+    "id": 10,
+    "name": "Carlsberg розливне пиво світле",
+    "litres": 500,
+    "cost": 55
+  }
+]

@@ -1,6 +1,7 @@
 .forrest__hotdrinks {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0 28px;
 
     &--item {
@@ -9,6 +10,7 @@
         height: 80px;
         background: rgba(56, 163, 165, 0.4);
         border-radius: 15px;
+        margin-bottom: 15px;
         
     }
 

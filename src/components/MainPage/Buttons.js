@@ -9,7 +9,7 @@ export default function Buttons() {
           НІ
         </NavLink>
 
-        <NavLink className="forrest__nav--link" to="/full=price">
+        <NavLink className="forrest__nav--link" to="/full-list">
           ТАК
         </NavLink>
       </div>
