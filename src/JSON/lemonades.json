@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Лимонад Алоє",
+    "litres": 250,
+    "cost": 45
+  },
+  {
+    "id": 2,
+    "name": "Лимонад М'ятний",
+    "litres": 250,
+    "cost": 45
+  },
+  {
+    "id": 3,
+    "name": "Лимонад Цитрусовий",
+    "litres": 250,
+    "cost": 45
+  },
+  {
+    "id": 4,
+    "name": "Лимонад Імбирний",
+    "litres": 250,
+    "cost": 45
+  },
+  {
+    "id": 5,
+    "name": "Моктейль Mango Chili",
+    "litres": 250,
+    "cost": 90
+  },
+  {
+    "id": 6,
+    "name": "Моктейль Vanilla Rapsberry",
+    "litres": 250,
+    "cost": 90
+  },
+  {
+    "id": 7,
+    "name": "Моктейль Sayonara",
+    "litres": 250,
+    "cost": 90
+  },
+  {
+    "id": 8,
+    "name": "Strawberry Mohito",
+    "litres": 250,
+    "cost": 95
+  }
+]

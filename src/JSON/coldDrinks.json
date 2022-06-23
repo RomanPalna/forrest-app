@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Coca-Cola",
+    "litres": 330,
+    "cost": 30
+  },
+  {
+    "id": 2,
+    "name": "Fanta",
+    "litres": 330,
+    "cost": 30
+  },
+  {
+    "id": 3,
+    "name": "Sprite",
+    "litres": 330,
+    "cost": 30
+  },
+  {
+    "id": 4,
+    "name": "Schweppes Tonic",
+    "litres": 330,
+    "cost": 30
+  },
+  {
+    "id": 5,
+    "name": "Pepsi",
+    "litres": 330,
+    "cost": 30
+  },
+  {
+    "id": 6,
+    "name": "Моршинська слабогазована",
+    "litres": 500,
+    "cost": 40
+  },
+  {
+    "id": 7,
+    "name": "Моршинська негазована",
+    "litres": 500,
+    "cost": 40
+  },
+  {
+    "id": 8,
+    "name": "Bourjomi",
+    "litres": 500,
+    "cost": 50
+  },
+  {
+    "id": 9,
+    "name": "Сік у ассортименті",
+    "litres": 250,
+    "cost": 40
+  }
+]

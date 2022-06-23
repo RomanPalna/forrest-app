@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../../Modal/Modal";
-import HotDrinks from "../../Drinks/HotDrinks/Hotdrinks";
+import Lemonades from "../../Drinks/Lemonades/Lemonades";
 import Lemonade from "../../../images/drinks/Cocktail.svg";
 
 export default function CraftLemonades() {
@@ -18,7 +18,7 @@ export default function CraftLemonades() {
         </div>
       </li>
       <Modal active={modalActive} setActive={setModalActive}>
-        <HotDrinks />
+        <Lemonades />
       </Modal>
     </>
   );

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import HotDrinks from "../../Drinks/HotDrinks/Hotdrinks";
+import CoffeeTea from "../../Drinks/CoffeeTea/CoffeeTea";
 import Modal from "../../Modal/Modal";
 import Coffee from "../../../images/drinks/coffee.svg";
 
-export default function CoffeeTea() {
+export default function Coffeetea() {
   const [modalActive, setModalActive] = useState(false);
   return (
     <>
@@ -17,7 +17,7 @@ export default function CoffeeTea() {
         </div>
       </li>
       <Modal active={modalActive} setActive={setModalActive}>
-        <HotDrinks />
+        <CoffeeTea />
       </Modal>
     </>
   );

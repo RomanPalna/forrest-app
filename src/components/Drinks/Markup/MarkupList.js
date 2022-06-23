@@ -1,4 +1,4 @@
-export default function HotDrinksList({ props }) {
+export default function MarkupList({ props }) {
   const { name, litres, cost } = props;
   return (
     <tr>
