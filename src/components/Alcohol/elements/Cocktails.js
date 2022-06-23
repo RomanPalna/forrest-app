@@ -13,7 +13,7 @@ export default function Cocktails() {
           onClick={() => setModalActive(true)}
         >
           <img src={cocktail} alt="hot drinks" width="35" height="30" />
-          <span className="forrest__hotdrinks--text">Коктейлі</span>
+          <span className="forrest__hotdrinks--text">Фірмові Коктейлі</span>
         </div>
       </li>
       <Modal active={modalActive} setActive={setModalActive}>

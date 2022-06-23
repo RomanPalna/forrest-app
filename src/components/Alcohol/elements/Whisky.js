@@ -1,9 +1,9 @@
 import { useState } from "react";
-import BeerList from "../../Drinks/Beer/BeerList";
+import WhiskyList from "../../Drinks/Whisky/WhiskyList";
 import Modal from "../../Modal/Modal";
-import glass from "../../../images/drinks/Glass.svg";
+import whiskey from "../../../images/drinks/whiskey.svg";
 
-export default function Beer() {
+export default function Whisky() {
   const [modalActive, setModalActive] = useState(false);
   return (
     <>
@@ -12,12 +12,12 @@ export default function Beer() {
           className="forrest__hotdrinks--link"
           onClick={() => setModalActive(true)}
         >
-          <img src={glass} alt="hot drinks" width="35" height="30" />
-          <span className="forrest__hotdrinks--text">Пиво</span>
+          <img src={whiskey} alt="hot drinks" width="35" height="30" />
+          <span className="forrest__hotdrinks--text">Віскі</span>
         </div>
       </li>
       <Modal active={modalActive} setActive={setModalActive}>
-        <BeerList />
+        <WhiskyList />
       </Modal>
     </>
   );
