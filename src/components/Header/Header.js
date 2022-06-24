@@ -5,12 +5,7 @@ export default function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <img
-          className="header__logo"
-          src={logo}
-          width="320"
-          alt="ForRest Logo"
-        />
+        <img className="header__logo" src={logo} alt="ForRest Logo" />
       </Link>
     </div>
   );

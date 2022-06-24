@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 18px;
+    padding: 0 48px;
 
     &--item {
         display: block;
@@ -23,6 +23,7 @@
 
     &--text {
     text-decoration: none;
+    font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;

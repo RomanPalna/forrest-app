@@ -14,7 +14,7 @@ export default function CraftLemonades() {
           onClick={() => setModalActive(true)}
         >
           <img src={Lemonade} alt="hot drinks" width="35" height="30" />
-          <span className="forrest__hotdrinks--text">Крафтові лимонади</span>
+          <span className="forrest__hotdrinks--text">Лимонади Моктейлі</span>
         </div>
       </li>
       <Modal active={modalActive} setActive={setModalActive}>

@@ -59,7 +59,7 @@ export default function ImageSlider() {
       <div style={{ textAlign: "center" }}>
         <div
           style={{
-            padding: "0 20px",
+            padding: "0 48px",
           }}
         >
           <Carousel
