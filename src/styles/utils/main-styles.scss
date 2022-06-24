@@ -2,13 +2,14 @@ body {
 background-image: url('../../images/background.jpg');
 
 backdrop-filter: blur(5px);
-background-size: 100%;
-position: fixed;
+background-size: cover;
+background-position: center;
+// position: fixed;
 left: 0;
 right: 0;
 top: 0;
 bottom: 0;
-background-repeat: no-repeat;
+background-repeat: repeat;
 text-decoration: none;
 list-style: none;
 }

@@ -1,4 +1,3 @@
-
 import { Route, Routes } from "react-router-dom";
 import Alcohol from "./components/Alcohol/Alcohol";
 import Header from "./components/Header/Header";
@@ -11,7 +10,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Buttons />} />
+        <Route exact path="/forrest-app" element={<Buttons />} />
         <Route path="/non-alcohol" element={<NonAlcohol />} />
         <Route path="/full-list" element={<Alcohol />} />
         <Route path="*" element={<div>Page Not Found</div>} />
