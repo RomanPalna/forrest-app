@@ -1,5 +1,6 @@
 import Beer from "./Beer";
 import Cocktails from "./Cocktails";
+import Gorilka from "./Gorilka";
 import OtherAlco from "./OtherAlco";
 import RedWine from "./RedWine";
 import SparklingWine from "./SparklingWine";
@@ -12,6 +13,7 @@ export default function AlcoholElements() {
       <Beer />
       <Cocktails />
       <Whisky />
+      <Gorilka />
       <OtherAlco />
       <SparklingWine />
       <WhiteWine />

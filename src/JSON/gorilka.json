@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Горілка Львівська",
+    "litres": 50,
+    "cost": 40
+  },
+  {
+    "id": 2,
+    "name": "Горілка Absolute",
+    "litres": 50,
+    "cost": 55
+  },
+  {
+    "id": 3,
+    "name": "Горілка Finlandia",
+    "litres": 50,
+    "cost": 55
+  },
+  {
+    "id": 4,
+    "name": "Горілка Grey Goose",
+    "litres": 50,
+    "cost": 90
+  },
+  {
+    "id": 7,
+    "name": "Горілка Хортиця Преміум",
+    "litres": 50,
+    "cost": 30
+  }
+]
