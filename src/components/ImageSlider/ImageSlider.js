@@ -6,12 +6,17 @@ export default function ImageSlider() {
   const captionStyle = {
     fontSize: "2em",
     fontWeight: "bold",
+    fontFamily: "Montserrat",
   };
 
   return (
     <div
       className="App"
-      style={{ maxWidth: "450px", width: "100%", margin: "0 auto" }}
+      style={{
+        maxWidth: "450px",
+        width: "100%",
+        margin: "0 auto",
+      }}
     >
       <div
         style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}
