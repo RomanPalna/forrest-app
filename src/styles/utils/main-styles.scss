@@ -1,7 +1,6 @@
-body {
+.forrest__container {
 background-image: url('../../images/background.jpg');
-
-backdrop-filter: blur(5px);
+backdrop-filter: blur(20px);
 background-size: cover;
 background-position: top;
 position: fixed;
@@ -12,10 +11,13 @@ bottom: -10px;
 background-repeat: repeat;
 text-decoration: none;
 list-style: none;
+overflow: scroll;
+-webkit-overflow-scrolling: touch;
+height: 100%;
 }
 
-#root {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    height: 100%;
-}
+// #root {
+//     overflow: scroll;
+//     -webkit-overflow-scrolling: touch;
+//     height: 100%;
+// }
