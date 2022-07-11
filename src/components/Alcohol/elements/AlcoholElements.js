@@ -9,7 +9,7 @@ import WhiteWine from "./WhiteWine";
 
 export default function AlcoholElements() {
   return (
-    <>
+    <ul className="forrest__hotdrinks">
       <Beer />
       <Cocktails />
       <Whisky />
@@ -18,6 +18,6 @@ export default function AlcoholElements() {
       <SparklingWine />
       <WhiteWine />
       <RedWine />
-    </>
+    </ul>
   );
 }

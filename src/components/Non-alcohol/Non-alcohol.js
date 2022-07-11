@@ -9,9 +9,7 @@ export default function NonAlcohol() {
     <Container>
       <Header />
       <ImageSlider />
-      <ul className="forrest__hotdrinks">
-        <NonAlcoholElements />
-      </ul>
+      <NonAlcoholElements />
       <Social />
     </Container>
   );

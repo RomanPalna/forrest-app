@@ -1,0 +1,48 @@
+.forrest__pnf {
+    background-image: url("../../images/error404.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 172px 20px 150px;
+
+    &--text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #151515;
+        margin: 0
+    }
+
+    &--discr {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #151515;
+        margin: 7px 0 465px;
+    }
+
+    &--button {
+    
+        width: 100px;
+        height: 44px;
+        background: rgba(56, 163, 165, 0.5);
+        border-radius: 25px;
+        padding: 10px 12px;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #151515;
+    }
+}

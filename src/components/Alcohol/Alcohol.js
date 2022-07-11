@@ -10,10 +10,8 @@ export default function Alcohol() {
     <Container>
       <Header />
       <ImageSlider />
-      <ul className="forrest__hotdrinks">
-        <NonAlcoholElements />
-        <AlcoholElements />
-      </ul>
+      <NonAlcoholElements />
+      <AlcoholElements />
       <Social />
     </Container>
   );

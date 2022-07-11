@@ -1,0 +1,29 @@
+{
+  "correlationId": "2f14fb5f-d232-437a-bc61-d9ca56e35027",
+  "organizations": [
+    {
+      "responseType": "Extended",
+      "country": "Ukraine",
+      "restaurantAddress": "Khmel\\'nyts\\'ka oblast, Khmel\\'nyts\\'kyi, Proskurivs\\'ka Street 66/1",
+      "latitude": 49.4194314,
+      "longitude": 26.9946648,
+      "useUaeAddressingSystem": false,
+      "version": "8.1.3018.0.1654057121034",
+      "currencyIsoName": "UAH",
+      "currencyMinimumDenomination": 0.0,
+      "countryPhoneCode": "38",
+      "marketingSourceRequiredInDelivery": false,
+      "defaultDeliveryCityId": "b090de0b-8550-6e17-70b2-bbba152bcbd3",
+      "deliveryCityIds": null,
+      "deliveryServiceType": "CourierAndSelfService",
+      "defaultCallCenterPaymentTypeId": "09322f46-578a-d210-add7-eec222a08871",
+      "orderItemCommentEnabled": false,
+      "inn": "",
+      "addressFormatType": "Legacy",
+      "isConfirmationEnabled": false,
+      "confirmAllowedIntervalInMinutes": 1440,
+      "id": "ab87a4a0-80bf-4746-96e0-d30e33e8f781",
+      "name": "ForRest"
+    }
+  ]
+}

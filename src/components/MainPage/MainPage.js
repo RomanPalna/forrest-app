@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 import Header from "../Header/Header";
 import Social from "../Social/Social";
 
-export default function Buttons() {
+export default function MainPage() {
   return (
     <Container>
       <Header />
