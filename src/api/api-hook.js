@@ -25,43 +25,43 @@ function useMainMenu() {
 
   useEffect(() => {
     getMenu();
-  }, []);
 
-  if (menu) {
-    const groups = menu.groups;
-    const products = menu.products;
+    if (menu) {
+      const groups = menu.groups;
+      const products = menu.products;
 
-    const groupsWithProducts = [];
-    products.forEach((product) => {
-      if (product.parentGroup === null) {
-        return;
-      }
+      const groupsWithProducts = [];
+      products.forEach((product) => {
+        if (product.parentGroup === null) {
+          return;
+        }
 
-      let hasGroup = true;
-      let group = groupsWithProducts.find(
-        (existingGroup) => existingGroup.id === product.parentGroup
+        let hasGroup = true;
+        let group = groupsWithProducts.find(
+          (existingGroup) => existingGroup.id === product.parentGroup
+        );
+        if (!group) {
+          hasGroup = false;
+          group = groups.find((group) => group.id === product.parentGroup);
+        }
+
+        if (group.products === undefined) {
+          group.products = [];
+        }
+        group.products.push(product);
+
+        if (!hasGroup) {
+          groupsWithProducts.push(group);
+        }
+      });
+      const isIncludedInMenu = groupsWithProducts.map((item) =>
+        item.products.filter((item) => {
+          return item.sizePrices[0].price.isIncludedInMenu === true;
+        })
       );
-      if (!group) {
-        hasGroup = false;
-        group = groups.find((group) => group.id === product.parentGroup);
-      }
-
-      if (group.products === undefined) {
-        group.products = [];
-      }
-      group.products.push(product);
-
-      if (!hasGroup) {
-        groupsWithProducts.push(group);
-      }
-    });
-    const isIncludedInMenu = groupsWithProducts.map((item) =>
-      item.products.filter((item) => {
-        return item.sizePrices[0].price.isIncludedInMenu === true;
-      })
-    );
-    setMainMenu(isIncludedInMenu);
-  }
+      setMainMenu(isIncludedInMenu);
+    }
+  }, [menu]);
 
   return mainMenu;
 }
