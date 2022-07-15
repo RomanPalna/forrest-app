@@ -5,7 +5,7 @@ const menuApi = new MenuApi("https://api-eu.iiko.services", {
   "Content-type": "application/json",
 });
 
-function useMainMenu() {
+function useMainMenu(groupName) {
   const [menu, setMenu] = useState();
   const [mainMenu, setMainMenu] = useState();
 
@@ -54,14 +54,17 @@ function useMainMenu() {
           groupsWithProducts.push(group);
         }
       });
-      const isIncludedInMenu = groupsWithProducts.map((item) =>
-        item.products.filter((item) => {
-          return item.sizePrices[0].price.isIncludedInMenu === true;
-        })
-      );
-      setMainMenu(isIncludedInMenu);
+
+      const alcoGroup = groupsWithProducts.find((item) => {
+        return item.name === groupName;
+      });
+      const alcoGroupIncluded = alcoGroup.products.filter((item) => {
+        return item.sizePrices[0].price.isIncludedInMenu === true;
+      });
+
+      setMainMenu(alcoGroupIncluded);
     }
-  }, [menu]);
+  }, [groupName, menu]);
 
   return mainMenu;
 }

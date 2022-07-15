@@ -5,11 +5,11 @@ import MainPage from "./components/MainPage/MainPage";
 import NonAlcohol from "./components/Non-alcohol/Non-alcohol";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
-import useMainMenu from "./api/api-hook";
+import useMainMenu from "./api/useMainMenuHook";
 
 function App() {
   const [first, setFirst] = useState();
-  const mainMenu = useMainMenu();
+  const mainMenu = useMainMenu("Червоні");
 
   useEffect(() => {
     setFirst(mainMenu);
