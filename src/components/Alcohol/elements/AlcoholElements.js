@@ -16,8 +16,8 @@ export default function AlcoholElements() {
       <Gorilka />
       {/* <OtherAlco /> */}
       {/* <SparklingWine /> */}
-      {/* <WhiteWine /> */}
-      {/* <RedWine /> */}
+      <WhiteWine />
+      <RedWine />
     </ul>
   );
 }
