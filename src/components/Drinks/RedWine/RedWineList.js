@@ -11,5 +11,5 @@ export default function RedWineList() {
     setRedWine(redWineList);
   }, [redWineList]);
 
-  return <Markup drinks={redWine} caption={"Червоні та кріплені вина"} />;
+  return <Markup drinks={redWine} caption={"Червоні вина"} />;
 }

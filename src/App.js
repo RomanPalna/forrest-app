@@ -9,6 +9,7 @@ import MainPage from "./components/MainPage/MainPage";
 import NonAlcohol from "./components/Non-alcohol/Non-alcohol";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import RedWineList from "./components/Drinks/RedWine/RedWineList";
+import SparklingWineList from "./components/Drinks/SparklingWine/SparklingWineList";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/gorilka" element={<GorilkaList />} />
         <Route path="/white-wine" element={<WhiteWineList />} />
         <Route path="/red-wine" element={<RedWineList />} />
+        <Route path="/sparkling-wine" element={<SparklingWineList />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
