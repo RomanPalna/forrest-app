@@ -3,7 +3,7 @@ import Markup from "../Markup/Markup";
 import useMainMenu from "../../../api/useMainMenuHook";
 
 export default function WhiskyList() {
-  const [whiskey, setwhiskey] = useState();
+  const [whisky, setwhiskey] = useState();
 
   const whiskyList = useMainMenu("Віскі");
 
@@ -11,5 +11,5 @@ export default function WhiskyList() {
     setwhiskey(whiskyList);
   }, [whiskyList]);
 
-  return <Markup drinks={whiskey} caption={"віскі"} />;
+  return <Markup drinks={whisky} caption={"віскі"} />;
 }

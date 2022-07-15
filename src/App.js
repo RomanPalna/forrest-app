@@ -3,6 +3,7 @@ import Alcohol from "./components/Alcohol/Alcohol";
 import BeerList from "./components/Drinks/Beer/BeerList";
 import CocktailList from "./components/Drinks/Cocktails/CocktailList";
 import WhiskyList from "./components/Drinks/Whisky/WhiskyList";
+import GorilkaList from "./components/Drinks/Gorilka/GorilkaList";
 import MainPage from "./components/MainPage/MainPage";
 import NonAlcohol from "./components/Non-alcohol/Non-alcohol";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/beer" element={<BeerList />} />
         <Route path="/cocktails" element={<CocktailList />} />
         <Route path="/whisky" element={<WhiskyList />} />
+        <Route path="/gorilka" element={<GorilkaList />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>

@@ -13,7 +13,7 @@ export default function AlcoholElements() {
       <Beer />
       <Cocktails />
       <Whisky />
-      {/* <Gorilka /> */}
+      <Gorilka />
       {/* <OtherAlco /> */}
       {/* <SparklingWine /> */}
       {/* <WhiteWine /> */}
