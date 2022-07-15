@@ -1,10 +1,14 @@
 export default function MarkupList({ props }) {
-  const { name, litres, cost } = props;
+  // const { name } = props;
+
+  const price = props.sizePrices.map((price) => {
+    return price.price.currentPrice;
+  });
+
   return (
     <tr>
-      <td className="forrest__coffee--name">{name}</td>
-      <td className="forrest__coffee--litres">{litres}</td>
-      <td className="forrest__coffee--cost">{cost}</td>
+      <td className="forrest__coffee--name">{props.name}</td>
+      <td className="forrest__coffee--cost">{price}</td>
     </tr>
   );
 }

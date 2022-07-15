@@ -11,13 +11,13 @@ export default function AlcoholElements() {
   return (
     <ul className="forrest__hotdrinks">
       <Beer />
-      <Cocktails />
+      {/* <Cocktails />
       <Whisky />
       <Gorilka />
       <OtherAlco />
       <SparklingWine />
       <WhiteWine />
-      <RedWine />
+      <RedWine /> */}
     </ul>
   );
 }

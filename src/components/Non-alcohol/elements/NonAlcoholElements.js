@@ -5,9 +5,9 @@ import CraftLemonades from "./CraftLemonades";
 export default function NonAlcoholElements() {
   return (
     <ul className="forrest__hotdrinks">
-      <ColdDrinks />
+      {/* <ColdDrinks />
       <Coffeetea />
-      <CraftLemonades />
+      <CraftLemonades /> */}
     </ul>
   );
 }
