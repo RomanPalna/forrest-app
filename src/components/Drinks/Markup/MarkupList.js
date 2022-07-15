@@ -1,6 +1,4 @@
 export default function MarkupList({ props }) {
-  // const { name } = props;
-
   const price = props.sizePrices.map((price) => {
     return price.price.currentPrice;
   });
