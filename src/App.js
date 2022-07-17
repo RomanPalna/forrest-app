@@ -12,6 +12,7 @@ import RedWineList from "./components/Drinks/RedWine/RedWineList";
 import SparklingWineList from "./components/Drinks/SparklingWine/SparklingWineList";
 import Lemonades from "./components/Drinks/Lemonades/LemonadesList";
 import CoffeeTeaList from "./components/Drinks/CoffeeTea/CoffeeTea";
+import ColdDrinksList from "./components/Drinks/ColdDrinks/ColdDrinksList";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/non-alcohol" element={<NonAlcohol />} />
         <Route path="/lemonades" element={<Lemonades />} />
         <Route path="/coffee-tea" element={<CoffeeTeaList />} />
+        <Route path="/cold-drinks" element={<ColdDrinksList />} />
 
         <Route path="/full-list" element={<Alcohol />} />
         <Route path="/beer" element={<BeerList />} />
