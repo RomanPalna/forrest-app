@@ -12,7 +12,7 @@ export default function Markup({ drinks, caption, format }) {
   }, [drinks]);
 
   return (
-    <>
+    <div className="forrest">
       {uniq ? (
         <table className="forrest__coffee">
           <caption className="forrest__coffee--head">{caption}</caption>
@@ -31,6 +31,6 @@ export default function Markup({ drinks, caption, format }) {
       ) : (
         <p>Loading...</p>
       )}
-    </>
+    </div>
   );
 }

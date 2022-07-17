@@ -1,15 +1,27 @@
-.forrest__coffee {
+.forrest {
     position: relative;
+    background-color: #1E1E1E;
+    height: 100%;
+    // width: 100vw;
+    align-items: center;
+    overflow: auto;
+    padding: 60px 15px;
+    
+}
+
+.forrest__coffee {
+    // position: sticky;
     background-color: #1E1E1E;
     color: #E4E4E4;
     font-family: 'Montserrat';
     table-layout: fixed;
     border-collapse: collapse;
-    margin: 0 21px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    margin: 0 auto;
+    // overflow-x: hidden;
+    overflow-y: scroll;
     max-width: 520px;
     max-height: 600px;
+    
     
 
     &--head {
@@ -74,7 +86,7 @@ th {
 }
 
 thead {
-    position: sticky;
+    // position: sticky;
     top: 0;
     background-color: #1E1E1E;
     color: #E4E4E4;
