@@ -1,5 +1,3 @@
-import { createRoutesFromChildren } from "react-router-dom";
-
 export default function MarkupList({ props, value }) {
   const price = props.sizePrices.map((price) => {
     return price.price.currentPrice;

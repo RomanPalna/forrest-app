@@ -6,7 +6,7 @@ export default function NonAlcoholElements() {
   return (
     <ul className="forrest__hotdrinks">
       {/* <ColdDrinks /> */}
-      {/* <Coffeetea /> */}
+      <Coffeetea />
       <CraftLemonades />
     </ul>
   );
