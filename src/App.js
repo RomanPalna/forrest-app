@@ -10,13 +10,16 @@ import NonAlcohol from "./components/Non-alcohol/Non-alcohol";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import RedWineList from "./components/Drinks/RedWine/RedWineList";
 import SparklingWineList from "./components/Drinks/SparklingWine/SparklingWineList";
+import Lemonades from "./components/Drinks/Lemonades/LemonadesList";
 
 function App() {
   return (
     <>
       <Routes>
         <Route exact path="/forrest-app" element={<MainPage />} />
+
         <Route path="/non-alcohol" element={<NonAlcohol />} />
+        <Route path="/lemonades" element={<Lemonades />} />
 
         <Route path="/full-list" element={<Alcohol />} />
         <Route path="/beer" element={<BeerList />} />

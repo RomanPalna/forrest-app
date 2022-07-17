@@ -6,10 +6,11 @@ export default function RedWineList() {
   const [redWine, setRedWine] = useState();
 
   const redWineList = useMainMenu("Червоні");
+  const wine = "wine";
 
   useEffect(() => {
     setRedWine(redWineList);
   }, [redWineList]);
 
-  return <Markup drinks={redWine} caption={"Червоні вина"} />;
+  return <Markup drinks={redWine} caption={"Червоні вина"} format={wine} />;
 }

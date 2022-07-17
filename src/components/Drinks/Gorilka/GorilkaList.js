@@ -6,10 +6,11 @@ export default function GorilkaList() {
   const [gorilka, setGorilka] = useState();
 
   const gorilkaList = useMainMenu("Горілка");
+  const fifty = "fifty";
 
   useEffect(() => {
     setGorilka(gorilkaList);
   }, [gorilkaList]);
 
-  return <Markup drinks={gorilka} caption={"горілка"} />;
+  return <Markup drinks={gorilka} caption={"горілка"} format={fifty} />;
 }

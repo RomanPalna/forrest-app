@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import MarkupList from "./MarkupList";
 
-export default function Markup({ drinks, caption }) {
+export default function Markup({ drinks, caption, format }) {
   const [uniq, setUniq] = useState();
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Markup({ drinks, caption }) {
           </thead>
           <tbody>
             {uniq.map((drink) => {
-              return <MarkupList key={drink.id} props={drink} />;
+              return <MarkupList key={drink.id} props={drink} value={format} />;
             })}
           </tbody>
         </table>
