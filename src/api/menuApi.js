@@ -2,7 +2,6 @@ import axios from "axios";
 import accessToken from "./accessToken.json";
 import organizations from "./organization.json";
 import menu from "./menuResp.json";
-// const axios = require("axios");
 
 export default class MenuApi {
   constructor(baseURL, headers) {

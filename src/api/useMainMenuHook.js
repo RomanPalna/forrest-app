@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+// import axios from "axios";
 import MenuApi from "./menuApi";
 
 const menuApi = new MenuApi("https://api-eu.iiko.services", {
@@ -8,6 +9,10 @@ const menuApi = new MenuApi("https://api-eu.iiko.services", {
 function useMainMenu(groupName) {
   const [menu, setMenu] = useState();
   const [mainMenu, setMainMenu] = useState();
+
+  // axios
+  //   .get("https://forrest-express-serv.herokuapp.com/")
+  //   .then((response) => setMenu(response.data));
 
   async function getMenu() {
     const accessTokenResponse = await menuApi.getAccessToken();
@@ -25,7 +30,6 @@ function useMainMenu(groupName) {
 
   useEffect(() => {
     getMenu();
-
     if (menu) {
       const groups = menu.groups;
       const products = menu.products;

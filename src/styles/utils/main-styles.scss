@@ -1,7 +1,9 @@
 .forrest__container {
+    backdrop-filter: blur(20px);
 background-image: url('../../images/background.jpg');
-backdrop-filter: blur(20px);
+
 background-size: cover;
+
 background-position: top;
 position: fixed;
 left: 0;
