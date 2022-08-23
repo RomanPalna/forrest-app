@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import MarkupList from "./MarkupList";
+import GoBackButton from "./GoBackButton";
 
 export default function Markup({ drinks, caption, format }) {
   const [uniq, setUniq] = useState();
@@ -13,13 +14,14 @@ export default function Markup({ drinks, caption, format }) {
 
   return (
     <div className="forrest">
+      <GoBackButton />
       {uniq ? (
         <table className="forrest__coffee">
           <caption className="forrest__coffee--head">{caption}</caption>
           <thead>
             <tr>
               <th scope="col">Назва</th>
-              <th scope="col">Ціна</th>
+              <th scope="col">Ціна, грн</th>
             </tr>
           </thead>
           <tbody>
