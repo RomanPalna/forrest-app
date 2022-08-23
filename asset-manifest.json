@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5659d82.css",
+    "main.css": "/static/css/main.edc3514a.css",
     "main.js": "/static/js/main.f0ab2a32.js",
     "static/media/Sigar.JPG": "/static/media/Sigar.a0ad31c765b452b4b305.JPG",
     "static/media/BasilBeauty.JPG": "/static/media/BasilBeauty.4d062b46c24c56231529.JPG",
@@ -29,11 +29,11 @@
     "static/media/phone.svg": "/static/media/phone.dbe7620c003f94cc61906573c104ddbf.svg",
     "static/media/Facebook.svg": "/static/media/Facebook.f6c48646e2ca9b56f3bf2bb374cb4c81.svg",
     "index.html": "/index.html",
-    "main.d5659d82.css.map": "/static/css/main.d5659d82.css.map",
+    "main.edc3514a.css.map": "/static/css/main.edc3514a.css.map",
     "main.f0ab2a32.js.map": "/static/js/main.f0ab2a32.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5659d82.css",
+    "static/css/main.edc3514a.css",
     "static/js/main.f0ab2a32.js"
   ]
 }
