@@ -5,6 +5,7 @@ import NonAlcoholElements from "../Non-alcohol/elements/NonAlcoholElements";
 import Social from "../Social/Social";
 import AlcoholElements from "./elements/AlcoholElements";
 
+
 export default function Alcohol() {
   return (
     <Container>

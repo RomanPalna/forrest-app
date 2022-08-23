@@ -1,5 +1,5 @@
 {
-  "correlationId": "03149c86-548b-4981-8fc5-63118d9e1143",
+  "correlationId": "1f2bde2b-6a32-4c47-9dff-5b159c7e195d",
   "groups": [
     {
       "imageLinks": [],
@@ -14834,7 +14834,7 @@
       "carbohydratesFullAmount": null,
       "energyFullAmount": null,
       "weight": 1.0,
-      "groupId": "dcd6b696-7da2-5bc1-0180-40ff595f74cc",
+      "groupId": "0db9d157-437c-435f-8790-cf3a6e75e0a9",
       "productCategoryId": "9ef4935f-844b-bc29-0181-0b4f5f417d4d",
       "type": "Dish",
       "orderItemType": "Product",
@@ -19905,7 +19905,7 @@
       "carbohydratesFullAmount": null,
       "energyFullAmount": null,
       "weight": 1.0,
-      "groupId": "dcd6b696-7da2-5bc1-0180-40ff595f74cc",
+      "groupId": "0db9d157-437c-435f-8790-cf3a6e75e0a9",
       "productCategoryId": "9ef4935f-844b-bc29-0181-0b4f5f417d4d",
       "type": "Dish",
       "orderItemType": "Product",
@@ -21749,7 +21749,7 @@
       "carbohydratesFullAmount": null,
       "energyFullAmount": null,
       "weight": 1.0,
-      "groupId": "dcd6b696-7da2-5bc1-0180-40ff595f74cc",
+      "groupId": "0db9d157-437c-435f-8790-cf3a6e75e0a9",
       "productCategoryId": "9ef4935f-844b-bc29-0181-0b4f5f417d4d",
       "type": "Dish",
       "orderItemType": "Product",
@@ -26471,7 +26471,7 @@
         {
           "sizeId": null,
           "price": {
-            "currentPrice": 120.0,
+            "currentPrice": 155.0,
             "isIncludedInMenu": false,
             "nextPrice": null,
             "nextIncludedInMenu": false,
@@ -27695,7 +27695,7 @@
         {
           "sizeId": null,
           "price": {
-            "currentPrice": 120.0,
+            "currentPrice": 180.0,
             "isIncludedInMenu": false,
             "nextPrice": null,
             "nextIncludedInMenu": false,
@@ -33156,7 +33156,7 @@
       "carbohydratesFullAmount": null,
       "energyFullAmount": null,
       "weight": 1.0,
-      "groupId": "0baea117-388e-4766-8244-b41804bf3951",
+      "groupId": "82d76ef5-51ff-4f3b-ac7b-14b1c33fef41",
       "productCategoryId": "9ef4935f-844b-bc29-0181-0b4f5f417d4d",
       "type": "Dish",
       "orderItemType": "Product",
@@ -34080,7 +34080,7 @@
       "carbohydratesFullAmount": null,
       "energyFullAmount": null,
       "weight": 0.0,
-      "groupId": "0baea117-388e-4766-8244-b41804bf3951",
+      "groupId": "82d76ef5-51ff-4f3b-ac7b-14b1c33fef41",
       "productCategoryId": "9ef4935f-844b-bc29-0181-0b4f5f417d4d",
       "type": "Dish",
       "orderItemType": "Product",
@@ -39133,5 +39133,5 @@
     }
   ],
   "sizes": [],
-  "revision": 1660307172452
+  "revision": 1661181372457
 }
