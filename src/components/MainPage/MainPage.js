@@ -19,6 +19,7 @@ export default function MainPage() {
           </NavLink>
         </div>
       </div>
+
       <Social />
       <p
         style={{

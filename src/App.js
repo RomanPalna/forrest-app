@@ -18,12 +18,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/forrest-app" element={<MainPage />} />
-
-        <Route path="/non-alcohol" element={<NonAlcohol />} />
-        <Route path="/lemonades" element={<Lemonades />} />
-        <Route path="/coffee-tea" element={<CoffeeTeaList />} />
-        <Route path="/cold-drinks" element={<ColdDrinksList />} />
+        <Route exact path="/" element={<MainPage />} />
+        <Route path="non-alcohol" element={<NonAlcohol />} />
+        <Route path="lemonades" element={<Lemonades />} />
+        <Route path="coffee-tea" element={<CoffeeTeaList />} />
+        <Route path="cold-drinks" element={<ColdDrinksList />} />
 
         <Route path="/full-list" element={<Alcohol />} />
         <Route path="/beer" element={<BeerList />} />

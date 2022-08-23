@@ -8,7 +8,7 @@ export default function PageNotFound() {
         Щось не так. Сторінка не знайдена{"("}
       </p>
 
-      <Link className="forrest__pnf--button" to="/forrest-app">
+      <Link className="forrest__pnf--button" to="/">
         На головну
       </Link>
     </div>
