@@ -28,7 +28,7 @@ export default function OtherAlcoList() {
   return (
     <Markup
       drinks={otherAlco}
-      caption={"Ром, Вермут, Текіла, Джин"}
+      caption={"Ром, Вермут, Текіла, Джин, Настоянки, Лікери"}
       format={fifty}
     />
   );
