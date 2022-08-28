@@ -8,7 +8,12 @@ export default function Markup({ drinks, caption, format }) {
   useEffect(() => {
     if (drinks) {
       const makeUniq = drinks.filter((el, id) => drinks.indexOf(el) === id);
-      setUniq(makeUniq);
+
+      const filterPrice = makeUniq.filter(
+        (item) => item.sizePrices[0].price.currentPrice > 30
+      );
+
+      setUniq(filterPrice);
     }
   }, [drinks]);
 

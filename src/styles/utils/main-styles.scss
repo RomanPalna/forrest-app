@@ -1,22 +1,23 @@
+
 #root {
-
-    background-image: url('../../images/background.jpg');
-
-    background-size: cover;
-
-    background-position: top;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-repeat: repeat;
     height: 100%;
 }
 
-
 .forrest__container {
-    backdrop-filter: blur(5px);
+
+    
+        backdrop-filter: blur(5px);
+        background-size: cover;
+    
+        background-position: top;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-repeat: repeat;
+        
+    
     margin: 0 auto;
     text-decoration: none;
     list-style: none;
@@ -28,9 +29,22 @@
     -webkit-overflow-scrolling: touch;
 }
 
+body{
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    
+        background-position: top;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-repeat: repeat;
+        height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    // height: 100%;
+    background-color: #1E1E1E;
 
-//     overflow: auto;
-//     -webkit-overflow-scrolling: touch;
-//     height: 100%;
-//     background-color: #1E1E1E;
-// }
+}
+   

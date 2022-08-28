@@ -1,5 +1,5 @@
 {
-  "correlationId": "323e8fc7-f0f8-4a90-bbca-c5f568db1234",
+  "correlationId": "85ac4c94-a40a-415c-9c31-592bcfb29c8a",
   "groups": [
     {
       "imageLinks": [],
@@ -28224,7 +28224,7 @@
       "canSetOpenPrice": false,
       "id": "dcd6b696-7da2-5bc1-0180-40ff595f74fc",
       "code": "200481",
-      "name": "Mango Chilli Moctail",
+      "name": "Mango Chilli Moctail 130 мл",
       "description": "",
       "additionalInfo": null,
       "tags": [],
@@ -28275,7 +28275,7 @@
       "canSetOpenPrice": false,
       "id": "dcd6b696-7da2-5bc1-0180-40ff595f74f9",
       "code": "200478",
-      "name": "Sayonara Lemonade",
+      "name": "Sayonara Lemonade 130 мл",
       "description": "",
       "additionalInfo": null,
       "tags": [],
@@ -28377,7 +28377,7 @@
       "canSetOpenPrice": false,
       "id": "dcd6b696-7da2-5bc1-0180-40ff595f74fd",
       "code": "200482",
-      "name": "Vanilla Raspberry Mocktail",
+      "name": "Vanilla Raspberry Mocktail 130 мл",
       "description": "",
       "additionalInfo": null,
       "tags": [],
@@ -39133,5 +39133,5 @@
     }
   ],
   "sizes": [],
-  "revision": 1661181372457
+  "revision": 1661474299189
 }
