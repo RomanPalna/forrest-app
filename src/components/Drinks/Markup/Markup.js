@@ -10,7 +10,7 @@ export default function Markup({ drinks, caption, format }) {
       const makeUniq = drinks.filter((el, id) => drinks.indexOf(el) === id);
 
       const filterPrice = makeUniq.filter(
-        (item) => item.sizePrices[0].price.currentPrice > 30
+        (item) => item.sizePrices[0].price.currentPrice > 29
       );
 
       setUniq(filterPrice);
