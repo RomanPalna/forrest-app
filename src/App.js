@@ -14,6 +14,7 @@ import Lemonades from "./components/Drinks/Lemonades/LemonadesList";
 import CoffeeTeaList from "./components/Drinks/CoffeeTea/CoffeeTea";
 import ColdDrinksList from "./components/Drinks/ColdDrinks/ColdDrinksList";
 import OtherAlcoList from "./components/Drinks/otherAlco/OtherAlcoList";
+import BrandyCognac from "./components/Drinks/BrandyCognac/BrandyCognacList";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/full-list" element={<Alcohol />} />
         <Route path="/beer" element={<BeerList />} />
         <Route path="/cocktails" element={<CocktailList />} />
+        <Route path="/brandy-cognac" element={<BrandyCognac />} />
         <Route path="/whisky" element={<WhiskyList />} />
         <Route path="/gorilka" element={<GorilkaList />} />
         <Route path="/white-wine" element={<WhiteWineList />} />

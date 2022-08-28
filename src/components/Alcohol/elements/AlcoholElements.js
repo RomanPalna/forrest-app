@@ -1,4 +1,5 @@
 import Beer from "./Beer";
+import BrandyCognac from "./BrandyCognac";
 import Cocktails from "./Cocktails";
 import Gorilka from "./Gorilka";
 import OtherAlco from "./OtherAlco";
@@ -12,7 +13,9 @@ export default function AlcoholElements() {
     <ul className="forrest__hotdrinks">
       <Beer />
       <Cocktails />
+
       <Whisky />
+      <BrandyCognac />
       <Gorilka />
       <OtherAlco />
       <SparklingWine />

@@ -5,11 +5,15 @@ import Markup from "../Markup/Markup";
 export default function SparklingWineList() {
   const [sparkling, setSparkling] = useState();
   const sparklingList = useMainMenu("Ігристі");
+  const champagneList = useMainMenu("Шампанське");
   const wine = "wine";
 
   useEffect(() => {
-    setSparkling(sparklingList);
-  }, [sparklingList]);
+    if (sparklingList) {
+      const array = champagneList.concat(sparklingList);
+      setSparkling(array);
+    }
+  }, [champagneList, sparklingList]);
 
   return (
     <Markup
