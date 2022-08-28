@@ -13,7 +13,6 @@ export default function AlcoholElements() {
     <ul className="forrest__hotdrinks">
       <Beer />
       <Cocktails />
-
       <Whisky />
       <BrandyCognac />
       <Gorilka />
