@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MarkupList from "./MarkupList";
 import GoBackButton from "./GoBackButton";
+import Loading from "../../Loading/Loading";
 
 export default function Markup({ drinks, caption, format }) {
   const [uniq, setUniq] = useState();
@@ -12,7 +13,9 @@ export default function Markup({ drinks, caption, format }) {
       const filterPrice = makeUniq.filter(
         (item) => item.sizePrices[0].price.currentPrice > 29
       );
-
+      // setTimeout(() => {
+      //   setUniq(filterPrice);
+      // }, 1000);
       setUniq(filterPrice);
     }
   }, [drinks]);
@@ -36,7 +39,7 @@ export default function Markup({ drinks, caption, format }) {
           </tbody>
         </table>
       ) : (
-        <p>Loading...</p>
+        <Loading />
       )}
     </div>
   );
