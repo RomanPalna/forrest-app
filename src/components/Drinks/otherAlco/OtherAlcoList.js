@@ -10,15 +10,20 @@ export default function OtherAlcoList() {
   const vermouth = useMainMenu("Вермути");
   const gin = useMainMenu("Джини");
   const tequila = useMainMenu("Текіли");
+  const liquers = useMainMenu("Лікери");
 
   const fifty = "fifty";
 
   useEffect(() => {
     if (rum) {
-      const array = rum.concat(vermouth).concat(gin).concat(tequila);
+      const array = rum
+        .concat(vermouth)
+        .concat(gin)
+        .concat(tequila)
+        .concat(liquers);
       setOtherAlco(array);
     }
-  }, [rum, vermouth, gin, tequila]);
+  }, [rum, vermouth, gin, tequila, liquers]);
 
   return (
     <Markup
