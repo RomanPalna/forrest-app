@@ -7,7 +7,7 @@ export default function MarkupList({ props, value }) {
     return (
       <tr>
         <td className="forrest__coffee--name">{props.name}</td>
-        <td className="forrest__coffee--cost">{price}</td>
+        <td className="forrest__coffee--cost">{price} грн</td>
       </tr>
     );
   }
@@ -16,7 +16,7 @@ export default function MarkupList({ props, value }) {
     return (
       <tr>
         <td className="forrest__coffee--name">{props.name}</td>
-        <td className="forrest__coffee--cost">{price / 20}</td>
+        <td className="forrest__coffee--cost">{price / 20} грн</td>
       </tr>
     );
   }
@@ -25,7 +25,9 @@ export default function MarkupList({ props, value }) {
     return (
       <tr>
         <td className="forrest__coffee--name">{props.name}</td>
-        <td className="forrest__coffee--cost">{Math.round(price * 0.75)}</td>
+        <td className="forrest__coffee--cost">
+          {Math.round(price * 0.75)} грн
+        </td>
       </tr>
     );
   }

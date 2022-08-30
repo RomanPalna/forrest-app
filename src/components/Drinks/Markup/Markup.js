@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MarkupList from "./MarkupList";
 import GoBackButton from "./GoBackButton";
 import Loading from "../../Loading/Loading";
+import PriceChanger from "./PriceChanger";
 
 export default function Markup({ drinks, caption, format }) {
   const [uniq, setUniq] = useState();
@@ -27,10 +28,7 @@ export default function Markup({ drinks, caption, format }) {
         <table className="forrest__coffee">
           <caption className="forrest__coffee--head">{caption}</caption>
           <thead>
-            <tr>
-              <th scope="col">Назва</th>
-              <th scope="col">Ціна, грн</th>
-            </tr>
+            <PriceChanger value={format} />
           </thead>
           <tbody>
             {uniq.map((drink) => {
