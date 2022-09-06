@@ -1,18 +1,15 @@
 import { useEffect, useState } from "react";
-// import axios from "axios";
+
 import MenuApi from "./menuApi";
 
-const menuApi = new MenuApi("https://api-eu.iiko.services", {
+const menuApi = new MenuApi("https://api-eu.syrve.live", {
   "Content-type": "application/json",
+  "Access-Control-Allow-Origin": "https://api-eu.syrve.live",
 });
 
 function useMainMenu(groupName) {
   const [menu, setMenu] = useState();
   const [mainMenu, setMainMenu] = useState();
-
-  // axios
-  //   .get("https://forrest-express-serv.herokuapp.com/")
-  //   .then((response) => setMenu(response.data));
 
   async function getMenu() {
     const accessTokenResponse = await menuApi.getAccessToken();

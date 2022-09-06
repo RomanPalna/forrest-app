@@ -14,9 +14,7 @@ export default function Markup({ drinks, caption, format }) {
       const filterPrice = makeUniq.filter(
         (item) => item.sizePrices[0].price.currentPrice > 29
       );
-      // setTimeout(() => {
-      //   setUniq(filterPrice);
-      // }, 1000);
+
       setUniq(filterPrice);
     }
   }, [drinks]);

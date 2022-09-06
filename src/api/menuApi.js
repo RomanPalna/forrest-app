@@ -1,7 +1,7 @@
 import axios from "axios";
-import accessToken from "./accessToken.json";
-import organizations from "./organization.json";
-import menu from "./menuResp.json";
+// import accessToken from "./accessToken.json";
+// import organizations from "./organization.json";
+// import menu from "./menuResp.json";
 
 export default class MenuApi {
   constructor(baseURL, headers) {
@@ -13,11 +13,11 @@ export default class MenuApi {
 
   async getAccessToken() {
     try {
-      return accessToken;
-      // const accessToken = await this.client.post("/api/1/access_token", {
-      //   apiLogin: "ec7d99ca-998",
-      // });
-      // return accessToken.data;
+      // return accessToken;
+      const accessToken = await this.client.post("/api/1/access_token", {
+        apiLogin: "ec7d99ca-998",
+      });
+      return accessToken.data;
     } catch (error) {
       throw error;
     }
@@ -25,21 +25,21 @@ export default class MenuApi {
 
   async getOrganizations(accessToken) {
     try {
-      // const getOrganizationResponse = await this.client.post(
-      //   "/api/1/organizations",
-      //   {
-      //     returnAdditionalInfo: true,
-      //     includeDisabled: true,
-      //   },
-      //   {
-      //     headers: {
-      //       Authorization: `Bearer ${accessToken}`,
-      //     },
-      //   }
-      // );
-      // return getOrganizationResponse;
+      const getOrganizationResponse = await this.client.post(
+        "/api/1/organizations",
+        {
+          returnAdditionalInfo: true,
+          includeDisabled: true,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
+      return getOrganizationResponse;
 
-      return organizations;
+      // return organizations;
     } catch (error) {
       throw error;
     }
@@ -47,18 +47,18 @@ export default class MenuApi {
 
   async getMenu(organization, accessToken) {
     try {
-      // const menu = await this.client.post(
-      //   "/api/1/nomenclature",
-      //   {
-      //     organizationId: organization.id,
-      //     startRevision: 0,
-      //   },
-      //   {
-      //     headers: {
-      //       Authorization: `Bearer ${accessToken}`,
-      //     },
-      //   }
-      // );
+      const menu = await this.client.post(
+        "/api/1/nomenclature",
+        {
+          organizationId: organization.id,
+          startRevision: 0,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
       return menu;
     } catch (error) {
       throw error;
