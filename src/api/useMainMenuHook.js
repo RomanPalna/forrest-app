@@ -1,32 +1,38 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-import MenuApi from "./menuApi";
+// import MenuApi from "./menuApi";
 
-const menuApi = new MenuApi("https://api-eu.syrve.live", {
-  "Content-type": "application/json",
-  "Access-Control-Allow-Origin": "https://api-eu.syrve.live",
-});
+// const menuApi = new MenuApi("https://api-eu.syrve.live", {
+//   "Content-type": "application/json",
+// });
 
 function useMainMenu(groupName) {
   const [menu, setMenu] = useState();
   const [mainMenu, setMainMenu] = useState();
 
-  async function getMenu() {
-    const accessTokenResponse = await menuApi.getAccessToken();
-
-    const organizationsResp = await menuApi.getOrganizations(
-      accessTokenResponse.token
-    );
-
-    const [organization] = organizationsResp.organizations;
-
-    const menu = await menuApi.getMenu(organization, accessTokenResponse.token);
-
-    setMenu(menu);
+  if (!menu) {
+    axios
+      .get("https://forrest-server.herokuapp.com/")
+      .then((response) => setMenu(response.data));
   }
 
+  // async function getMenu() {
+  //   const accessTokenResponse = await menuApi.getAccessToken();
+
+  //   const organizationsResp = await menuApi.getOrganizations(
+  //     accessTokenResponse.token
+  //   );
+
+  //   const [organization] = organizationsResp.organizations;
+
+  //   const menu = await menuApi.getMenu(organization, accessTokenResponse.token);
+
+  //   setMenu(menu);
+  // }
+
   useEffect(() => {
-    getMenu();
+    // getMenu();
     if (menu) {
       const groups = menu.groups;
       const products = menu.products;
@@ -66,6 +72,8 @@ function useMainMenu(groupName) {
       setMainMenu(alcoGroupIncluded);
     }
   }, [groupName, menu]);
+
+  console.log(mainMenu);
 
   return mainMenu;
 }

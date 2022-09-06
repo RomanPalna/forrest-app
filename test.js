@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const response = axios
-  .get("https://forrest-express-serv.herokuapp.com/")
+  .get("https://forrest-server.herokuapp.com/")
   .then((response) => console.log(response.data));
 
 console.log(response);
