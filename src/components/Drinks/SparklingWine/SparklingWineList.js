@@ -9,7 +9,7 @@ export default function SparklingWineList() {
   const wine = "wine";
 
   useEffect(() => {
-    if (sparklingList) {
+    if (sparklingList && champagneList) {
       const array = champagneList.concat(sparklingList);
       setSparkling(array);
     }

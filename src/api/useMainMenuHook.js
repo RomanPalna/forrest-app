@@ -73,8 +73,6 @@ function useMainMenu(groupName) {
     }
   }, [groupName, menu]);
 
-  console.log(mainMenu);
-
   return mainMenu;
 }
 

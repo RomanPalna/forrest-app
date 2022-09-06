@@ -15,7 +15,7 @@ export default function OtherAlcoList() {
   const fifty = "fifty";
 
   useEffect(() => {
-    if (rum) {
+    if (rum && vermouth && gin && tequila && liquers) {
       const array = rum
         .concat(vermouth)
         .concat(gin)

@@ -9,7 +9,7 @@ export default function BrandyCognac() {
   const brandyList = useMainMenu("Бренді");
 
   useEffect(() => {
-    if (cognacList) {
+    if (cognacList && brandyList) {
       const array = cognacList.concat(brandyList);
       setBrandy(array);
     }

@@ -9,7 +9,7 @@ export default function BeerList() {
   const single = "single";
 
   useEffect(() => {
-    if (beerList) {
+    if (beerList && nonAlcBeer) {
       const array = beerList.concat(nonAlcBeer);
       setBeer(array);
     }
