@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// import MenuApi from "./menuApi";
-
-// const menuApi = new MenuApi("https://api-eu.syrve.live", {
-//   "Content-type": "application/json",
-// });
-
 function useMainMenu(groupName) {
-  const [menu, setMenu] = useState();
-  const [mainMenu, setMainMenu] = useState();
+  const [menu, setMenu] = useState(null);
+  const [mainMenu, setMainMenu] = useState(null);
 
   if (!menu) {
     axios
@@ -17,22 +11,7 @@ function useMainMenu(groupName) {
       .then((response) => setMenu(response.data));
   }
 
-  // async function getMenu() {
-  //   const accessTokenResponse = await menuApi.getAccessToken();
-
-  //   const organizationsResp = await menuApi.getOrganizations(
-  //     accessTokenResponse.token
-  //   );
-
-  //   const [organization] = organizationsResp.organizations;
-
-  //   const menu = await menuApi.getMenu(organization, accessTokenResponse.token);
-
-  //   setMenu(menu);
-  // }
-
   useEffect(() => {
-    // getMenu();
     if (menu) {
       const groups = menu.groups;
       const products = menu.products;

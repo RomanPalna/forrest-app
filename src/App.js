@@ -15,6 +15,7 @@ import CoffeeTeaList from "./components/Drinks/CoffeeTea/CoffeeTea";
 import ColdDrinksList from "./components/Drinks/ColdDrinks/ColdDrinksList";
 import OtherAlcoList from "./components/Drinks/otherAlco/OtherAlcoList";
 import BrandyCognac from "./components/Drinks/BrandyCognac/BrandyCognacList";
+import WineInGlassList from "./components/Drinks/WineInGlass/WineInGlassList";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/red-wine" element={<RedWineList />} />
         <Route path="/sparkling-wine" element={<SparklingWineList />} />
         <Route path="/other-alco" element={<OtherAlcoList />} />
+        <Route path="/glass-wine" element={<WineInGlassList />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>

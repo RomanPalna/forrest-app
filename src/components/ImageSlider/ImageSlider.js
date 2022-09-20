@@ -34,8 +34,6 @@ export default function ImageSlider() {
             height="450px"
             captionStyle={captionStyle}
             radius="10px"
-            // slideNumber={true}
-            // slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
             dots={true}
@@ -43,8 +41,6 @@ export default function ImageSlider() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-            // thumbnails={true}
-            // thumbnailWidth="100px"
             style={{
               textAlign: "center",
               maxWidth: "850px",

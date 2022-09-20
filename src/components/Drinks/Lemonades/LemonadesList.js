@@ -4,7 +4,8 @@ import Markup from "../Markup/Markup";
 
 export default function Lemonades() {
   const [lemonades, setLemonades] = useState();
-  const lemonadesList = useMainMenu("Фреші/лимонади");
+  const groupName = "Фреші/лимонади";
+  const lemonadesList = useMainMenu(groupName);
   const single = "single";
 
   useEffect(() => {

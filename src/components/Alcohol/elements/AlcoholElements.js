@@ -7,6 +7,7 @@ import RedWine from "./RedWine";
 import SparklingWine from "./SparklingWine";
 import Whisky from "./Whisky";
 import WhiteWine from "./WhiteWine";
+import WineInGlass from "./WineInGlass";
 
 export default function AlcoholElements() {
   return (
@@ -20,6 +21,7 @@ export default function AlcoholElements() {
       <SparklingWine />
       <WhiteWine />
       <RedWine />
+      <WineInGlass />
     </ul>
   );
 }

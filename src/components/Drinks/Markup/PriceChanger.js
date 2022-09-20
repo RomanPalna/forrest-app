@@ -12,7 +12,7 @@ export default function PriceChanger({ value }) {
     return (
       <tr>
         <th scope="col">Назва</th>
-        <th scope="col">Ціна, 50 грам</th>
+        <th scope="col">Ціна, 50 мл</th>
       </tr>
     );
   }
@@ -22,6 +22,15 @@ export default function PriceChanger({ value }) {
       <tr>
         <th scope="col">Назва</th>
         <th scope="col">Ціна, пляшка</th>
+      </tr>
+    );
+  }
+
+  if (value === "glass") {
+    return (
+      <tr>
+        <th scope="col">Назва</th>
+        <th scope="col">Ціна, 150 мл</th>
       </tr>
     );
   }
