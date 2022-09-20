@@ -1,10 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
-import menuReducer from "./menu-reducer";
-// import likeReducer from "./insta-reducer";
+// import menuReducer from "./menu-reducer";
+import headerReducer from "./header/header-reducer";
 
 const reducer = combineReducers({
-  service: menuReducer,
+  // service: menuReducer,
+  header: headerReducer,
 });
 
 const store = configureStore({
