@@ -3,8 +3,7 @@ import Header from "../Header/Header";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import NonAlcoholElements from "../Non-alcohol/elements/NonAlcoholElements";
 import Social from "../Social/Social";
-import AlcoholElements from "./elements/AlcoholElements";
-
+import AlcoholRoutes from "./elements/Routes";
 
 export default function Alcohol() {
   return (
@@ -12,7 +11,7 @@ export default function Alcohol() {
       <Header />
       <ImageSlider />
       <NonAlcoholElements />
-      <AlcoholElements />
+      <AlcoholRoutes />
       <Social />
     </Container>
   );
