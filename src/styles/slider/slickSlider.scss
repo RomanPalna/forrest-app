@@ -1,0 +1,27 @@
+.slider {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin-top: 25px;
+    margin: 25px auto;
+
+    &__img {
+        margin: 0 auto;
+        border-radius: 8px;
+        max-width: 80%;
+        height: auto;
+       
+    }
+
+    &__caption {
+        position: absolute;
+        color: #e1e1e1;
+        bottom: 20px;
+        left: 50px;
+        font-family: 'Montserrat';
+        font-style: bold;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
