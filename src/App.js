@@ -16,6 +16,8 @@ import ColdDrinksList from "./components/Drinks/ColdDrinks/ColdDrinksList";
 import OtherAlcoList from "./components/Drinks/otherAlco/OtherAlcoList";
 import BrandyCognac from "./components/Drinks/BrandyCognac/BrandyCognacList";
 import WineInGlassList from "./components/Drinks/WineInGlass/WineInGlassList";
+import ProductMarkup from "./components/Drinks/MarkupProduct/MarkupProduct";
+import Products from "./components/Drinks/MarkupProduct/Products";
 
 function App() {
   return (
@@ -24,12 +26,12 @@ function App() {
         <Route exact path="/" element={<MainPage />} />
         <Route path="non-alcohol" element={<NonAlcohol />} />
         <Route path="lemonades" element={<Lemonades />} />
-        <Route path="coffee-tea" element={<CoffeeTeaList />} />
+        <Route path="/coffee-tea" element={<CoffeeTeaList />} />
         <Route path="cold-drinks" element={<ColdDrinksList />} />
 
         <Route path="/full-list" element={<Alcohol />} />
         <Route path="/beer" element={<BeerList />} />
-        <Route path="/cocktails" element={<CocktailList />} />
+
         <Route path="/brandy-cognac" element={<BrandyCognac />} />
         <Route path="/whisky" element={<WhiskyList />} />
         <Route path="/gorilka" element={<GorilkaList />} />
@@ -38,6 +40,11 @@ function App() {
         <Route path="/sparkling-wine" element={<SparklingWineList />} />
         <Route path="/other-alco" element={<OtherAlcoList />} />
         <Route path="/glass-wine" element={<WineInGlassList />} />
+
+        <Route path="cocktails" element={<Products />}>
+          <Route index element={<CocktailList />} />
+          <Route path=":id" element={<ProductMarkup />} />
+        </Route>
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>

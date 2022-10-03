@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+import { useDispatch } from "react-redux";
+import { getProduct } from "../../../redux/product/product-action";
 import MarkupList from "./MarkupList";
 import GoBackButton from "./GoBackButton";
 import Loading from "../../Loading/Loading";
@@ -20,6 +21,12 @@ export default function Markup({ drinks, caption, format }) {
     }
   }, [drinks]);
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProduct(uniq));
+  }, [dispatch, uniq]);
+
   return (
     <div className="forrest">
       <GoBackButton />
@@ -31,7 +38,9 @@ export default function Markup({ drinks, caption, format }) {
           </thead>
           <tbody>
             {uniq.map((drink) => {
-              return <MarkupList key={drink.id} props={drink} value={format} />;
+              return (
+                <MarkupList key={drink.id} props={drink} format={format} />
+              );
             })}
           </tbody>
         </table>
