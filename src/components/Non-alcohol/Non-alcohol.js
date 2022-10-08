@@ -2,14 +2,14 @@ import Container from "../Container/Container";
 import Header from "../Header/Header";
 import SlickSlider from "../ImageSlider/SlickSlider";
 import Social from "../Social/Social";
-import NonAlcRoutes from "./elements/NonAlcRoutes";
+import NonAlcohol from "./elements/NonAlcohol";
 
-export default function NonAlcohol() {
+export default function NonAlcoholList() {
   return (
     <Container>
       <Header />
       <SlickSlider />
-      <NonAlcRoutes />
+      <NonAlcohol />
       <Social />
     </Container>
   );

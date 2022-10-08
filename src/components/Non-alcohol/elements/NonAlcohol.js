@@ -9,7 +9,7 @@ const ROUTES = [
   ["/lemonades", lemonade, "Лимонади Фреші"],
 ];
 
-export default function NonAlcRoutes() {
+export default function NonAlcohol() {
   return (
     <ul className="forrest__hotdrinks">
       {ROUTES.map(([route, img, name]) => (

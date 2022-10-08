@@ -22,7 +22,7 @@ const ROUTES = [
   ["/glass-wine", glassWine, "Вино розлив"],
 ];
 
-export default function AlcoholRoutes() {
+export default function Alcohol() {
   return (
     <ul className="forrest__hotdrinks">
       {ROUTES.map(([route, img, name]) => (
