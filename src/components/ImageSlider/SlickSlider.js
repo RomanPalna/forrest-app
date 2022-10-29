@@ -1,6 +1,5 @@
 import Slider from "react-slick";
 import imgArr from "../../images/slider-images/imgData";
-import slickImages from "./slickImages";
 
 export default function SlickSlider() {
   const settings = {
