@@ -1,15 +1,20 @@
 import Slider from "react-slick";
 import imgArr from "../../images/slider-images/imgData";
+import slickImages from "./slickImages";
 
 export default function SlickSlider() {
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 1000,
+    speed: 500,
   };
+
+  // const images = slickImages();
+
+  // console.log(images);
 
   return (
     <Slider {...settings}>

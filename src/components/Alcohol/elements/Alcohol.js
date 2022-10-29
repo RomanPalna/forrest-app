@@ -24,15 +24,21 @@ const ROUTES = [
 
 export default function Alcohol() {
   return (
-    <ul className="forrest__hotdrinks">
-      {ROUTES.map(([route, img, name]) => (
-        <Link to={route} key={route} className="forrest__hotdrinks--item">
-          <div className="forrest__hotdrinks--link">
-            <img src={img} alt="hot drinks" width="35" height="30" />
-            <span className="forrest__hotdrinks--text">{name}</span>
-          </div>
-        </Link>
-      ))}
-    </ul>
+    <div className="drinks__container">
+      <fieldset className="fieldset">
+        <legend>Алкоголь</legend>
+
+        <ul className="forrest__hotdrinks">
+          {ROUTES.map(([route, img, name]) => (
+            <Link to={route} key={route} className="forrest__hotdrinks--item">
+              <div className="forrest__hotdrinks--link">
+                <img src={img} alt="hot drinks" width="35" height="30" />
+                <span className="forrest__hotdrinks--text">{name}</span>
+              </div>
+            </Link>
+          ))}
+        </ul>
+      </fieldset>
+    </div>
   );
 }

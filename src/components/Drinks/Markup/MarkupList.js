@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
 
-export default function MarkupList({ props, format }) {
+export default function MarkupList({ props, format, path }) {
   const price = props.sizePrices.map((price) => {
     return price.price.currentPrice;
   });
 
+  const ComponentPath = path ? (
+    <td className="forrest__coffee--name toucheble">
+      <Link className="forrest__coffee--link" to={`/${path}/${props.id}`}>
+        {props.name}
+      </Link>
+    </td>
+  ) : (
+    <td className="forrest__coffee--name">{props.name}</td>
+  );
+
+  //render
+
   if (format === "single") {
     return (
       <tr>
-        <td className="forrest__coffee--name">
-          <Link className="forrest__coffee--link" to={`/cocktails/${props.id}`}>
-            {props.name}
-          </Link>
-        </td>
+        {ComponentPath}
+
         <td className="forrest__coffee--cost">{price} грн</td>
       </tr>
     );

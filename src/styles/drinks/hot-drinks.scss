@@ -128,8 +128,10 @@ tr {
         font-weight: 300;
         line-height: 17px;
         letter-spacing: 0em;
-        
+    
 }
+
+
 
 .back__button {
     position: fixed;
@@ -143,4 +145,31 @@ tr {
     height: 30px;
     padding: 5px 5px;
 
+}
+
+ .toucheble {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: url('../../images/drinks/hand.png');
+        width: 16px;
+        height: 16px;
+        top: -17%;
+        left: 0;
+        animation: touch infinite 500ms;
+    }
+}
+
+@keyframes touch {
+    0% {
+        transform: translate(-70%, 50%)rotate(90deg);
+    }
+    50% {
+        transform: translate(-90%, 50%) rotate(90deg);
+        }
+    100% {
+        transform: translate(-70%, 50%) rotate(90deg);
+        }
 }

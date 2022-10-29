@@ -6,18 +6,18 @@ import GoBackButton from "./GoBackButton";
 import Loading from "../../Loading/Loading";
 import PriceChanger from "./PriceChanger";
 
-export default function Markup({ drinks, caption, format }) {
+export default function Markup({ drinks, caption, format, path }) {
   const [uniq, setUniq] = useState();
 
   useEffect(() => {
-    if (drinks) {
+    if (!!drinks) {
       const makeUniq = drinks.filter((el, id) => drinks.indexOf(el) === id);
 
-      const filterPrice = makeUniq.filter(
-        (item) => item.sizePrices[0].price.currentPrice > 29
-      );
+      // const filterPrice = makeUniq.filter(
+      //   (item) => item.sizePrices[0].price.currentPrice > 29
+      // );
 
-      setUniq(filterPrice);
+      setUniq(makeUniq);
     }
   }, [drinks]);
 
@@ -39,7 +39,12 @@ export default function Markup({ drinks, caption, format }) {
           <tbody>
             {uniq.map((drink) => {
               return (
-                <MarkupList key={drink.id} props={drink} format={format} />
+                <MarkupList
+                  key={drink.id}
+                  props={drink}
+                  format={format}
+                  path={path}
+                />
               );
             })}
           </tbody>

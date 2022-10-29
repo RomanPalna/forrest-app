@@ -37,7 +37,11 @@ export default function ProductMarkup() {
     <Container>
       <GoBackButton />
       <Header />
-      <img className="product__img" src={noImage} alt="product_picture" />
+      <img
+        className="product__img"
+        src={drinks?.imageLinks[0] ? drinks.imageLinks[0] : noImage}
+        alt="product_picture"
+      />
       <p className="product__name">{drinks?.name}</p>
       <p className="product__descr">{drinks?.description}</p>
       <Social />
