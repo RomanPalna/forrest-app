@@ -13,8 +13,8 @@ function useMainMenu(groupName) {
 
   useEffect(() => {
     if (menu) {
-      const groups = menu.groups;
-      const products = menu.products;
+      const groups = menu?.groups;
+      const products = menu?.products;
 
       const groupsWithProducts = [];
       products.forEach((product) => {
@@ -45,7 +45,7 @@ function useMainMenu(groupName) {
         return item.name === groupName;
       });
       const alcoGroupIncluded = alcoGroup.products.filter((item) => {
-        return item.sizePrices[0].price.isIncludedInMenu === true;
+        return item.sizePrices[0].price.isIncludedInMenu;
       });
 
       setMainMenu(alcoGroupIncluded);

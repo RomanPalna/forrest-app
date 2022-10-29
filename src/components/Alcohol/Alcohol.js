@@ -1,18 +1,17 @@
 import Container from "../Container/Container";
 import Header from "../Header/Header";
-import ImageSlider from "../ImageSlider/ImageSlider";
-import NonAlcoholElements from "../Non-alcohol/elements/NonAlcoholElements";
+import SlickSlider from "../ImageSlider/SlickSlider";
+import NonAlcohol from "../Non-alcohol/elements/NonAlcohol";
 import Social from "../Social/Social";
-import AlcoholElements from "./elements/AlcoholElements";
+import Alcohol from "./elements/Alcohol";
 
-
-export default function Alcohol() {
+export default function AlcoholPage() {
   return (
     <Container>
       <Header />
-      <ImageSlider />
-      <NonAlcoholElements />
-      <AlcoholElements />
+      <SlickSlider />
+      <NonAlcohol />
+      <Alcohol />
       <Social />
     </Container>
   );

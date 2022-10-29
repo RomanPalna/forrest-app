@@ -1,9 +1,10 @@
 .forrest__social {
     list-style: none;
     display: flex;
-    padding: 0 0 22px;
+    padding: 0 0 30px;
     margin: 0;
     justify-content: center;
+    margin-top: 20px;
 
     &--item:not(:last-child) {
         margin-right: 30px;
