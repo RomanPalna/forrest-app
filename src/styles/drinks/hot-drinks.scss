@@ -151,7 +151,7 @@ tr {
                 -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
 
-            animation: shine 1s linear infinite;
+            animation: shine 5s ease-in infinite;
             
                 @keyframes shine {
                     to {
