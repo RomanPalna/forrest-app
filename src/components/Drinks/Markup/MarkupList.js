@@ -5,17 +5,19 @@ export default function MarkupList({ props, format, path }) {
     return price.price.currentPrice;
   });
 
+  console.log(path);
+
   const ComponentPath = path ? (
     <td className="forrest__coffee--name toucheble">
-      <Link className="forrest__coffee--link" to={`/${path}/${props.id}`}>
-        {props.name}
-      </Link>
+      <span>
+        <Link className="forrest__coffee--link" to={`/${path}/${props.id}`}>
+          {props.name}
+        </Link>
+      </span>
     </td>
   ) : (
     <td className="forrest__coffee--name">{props.name}</td>
   );
-
-  //render
 
   if (format === "single") {
     return (
@@ -30,7 +32,7 @@ export default function MarkupList({ props, format, path }) {
   if (format === "fifty") {
     return (
       <tr>
-        <td className="forrest__coffee--name">{props.name}</td>
+        {ComponentPath}
         <td className="forrest__coffee--cost">{price / 20} грн</td>
       </tr>
     );
@@ -39,7 +41,7 @@ export default function MarkupList({ props, format, path }) {
   if (format === "wine") {
     return (
       <tr>
-        <td className="forrest__coffee--name">{props.name}</td>
+        {ComponentPath}
         <td className="forrest__coffee--cost">
           {Math.round(price * 0.75)} грн
         </td>
@@ -50,7 +52,7 @@ export default function MarkupList({ props, format, path }) {
   if (format === "glass") {
     return (
       <tr>
-        <td className="forrest__coffee--name">{props.name}</td>
+        {ComponentPath}
         <td className="forrest__coffee--cost">
           {Math.round(price * 0.75) / 5} грн
         </td>

@@ -1,58 +1,70 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 
-function useMainMenu(groupName) {
-  const [menu, setMenu] = useState(null);
-  const [mainMenu, setMainMenu] = useState(null);
+function useMainMenu(groupNames) {
+  const [mainMenu, setMainMenu] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  if (!menu) {
-    axios
-      .get("https://forrest-server.herokuapp.com/")
-      .then((response) => setMenu(response.data));
-  }
+  const onBootstrap = useCallback(async () => {
+    try {
+      setIsLoading(true);
+
+      const response = await axios({
+        method: "get",
+        url: "https://forrest-server.herokuapp.com/",
+      });
+
+      if (response.data) {
+        const products = response?.data?.products || [];
+        const groups = response?.data?.groups || [];
+
+        const groupsWithProducts = [];
+        products.forEach((product) => {
+          if (!product.parentGroup) {
+            return;
+          }
+
+          let hasGroup = true;
+          let group = groupsWithProducts.find(
+            (existingGroup) => existingGroup.id === product.parentGroup
+          );
+          if (!group) {
+            hasGroup = false;
+            group = groups.find((group) => group.id === product.parentGroup);
+          }
+
+          if (!group.products) {
+            group.products = [];
+          }
+          group.products.push(product);
+
+          if (!hasGroup) {
+            groupsWithProducts.push(group);
+          }
+        });
+
+        const alcoGroup = groupsWithProducts.filter((item) => {
+          return groupNames.includes(item.name);
+        });
+
+        const alcoGroupIncluded = alcoGroup.map(({ products }) =>
+          products.filter((item) => item.sizePrices[0].price.isIncludedInMenu)
+        );
+
+        setMainMenu(alcoGroupIncluded.flatMap((item) => item));
+      }
+    } catch (e) {
+      console.log(`Error fetch menu ${e}`);
+    } finally {
+      setIsLoading(false);
+    }
+  }, [groupNames]);
 
   useEffect(() => {
-    if (menu) {
-      const groups = menu?.groups;
-      const products = menu?.products;
+    onBootstrap();
+  }, [onBootstrap]);
 
-      const groupsWithProducts = [];
-      products.forEach((product) => {
-        if (product.parentGroup === null) {
-          return;
-        }
-
-        let hasGroup = true;
-        let group = groupsWithProducts.find(
-          (existingGroup) => existingGroup.id === product.parentGroup
-        );
-        if (!group) {
-          hasGroup = false;
-          group = groups.find((group) => group.id === product.parentGroup);
-        }
-
-        if (group.products === undefined) {
-          group.products = [];
-        }
-        group.products.push(product);
-
-        if (!hasGroup) {
-          groupsWithProducts.push(group);
-        }
-      });
-
-      const alcoGroup = groupsWithProducts.find((item) => {
-        return item.name === groupName;
-      });
-      const alcoGroupIncluded = alcoGroup.products.filter((item) => {
-        return item.sizePrices[0].price.isIncludedInMenu;
-      });
-
-      setMainMenu(alcoGroupIncluded);
-    }
-  }, [groupName, menu]);
-
-  return mainMenu;
+  return { mainMenu, isLoading };
 }
 
 export default useMainMenu;

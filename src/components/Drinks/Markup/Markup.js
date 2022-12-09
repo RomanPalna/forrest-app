@@ -1,43 +1,36 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getProduct } from "../../../redux/product/product-action";
 import MarkupList from "./MarkupList";
 import GoBackButton from "./GoBackButton";
 import Loading from "../../Loading/Loading";
 import PriceChanger from "./PriceChanger";
+import useMainMenu from "../../../api/useMainMenuHook";
 
-export default function Markup({ drinks, caption, format, path }) {
-  const [uniq, setUniq] = useState();
-
-  useEffect(() => {
-    if (!!drinks) {
-      const makeUniq = drinks.filter((el, id) => drinks.indexOf(el) === id);
-
-      // const filterPrice = makeUniq.filter(
-      //   (item) => item.sizePrices[0].price.currentPrice > 29
-      // );
-
-      setUniq(makeUniq);
-    }
-  }, [drinks]);
+export default function Markup({ format, caption, path, type }) {
+  const { mainMenu, isLoading } = useMainMenu(type);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getProduct(uniq));
-  }, [dispatch, uniq]);
+    const uniq = mainMenu.filter((el, id) => mainMenu.indexOf(el) === id);
+
+    if (!!path) {
+      dispatch(getProduct(uniq));
+    }
+  }, [dispatch, mainMenu, path]);
 
   return (
     <div className="forrest">
       <GoBackButton />
-      {uniq ? (
+      {!isLoading ? (
         <table className="forrest__coffee">
           <caption className="forrest__coffee--head">{caption}</caption>
           <thead>
             <PriceChanger value={format} />
           </thead>
           <tbody>
-            {uniq.map((drink) => {
+            {mainMenu.map((drink) => {
               return (
                 <MarkupList
                   key={drink.id}

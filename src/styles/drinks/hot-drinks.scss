@@ -81,7 +81,6 @@
         background-color: #1E1E1E;
         border-style: none;
     }
- 
 }
 
 th {
@@ -113,10 +112,6 @@ thead th:nth-child(2) {
     width: 28%;
 }
 
-// thead th:nth-child(3) {
-//     width: 15%;
-// }
-
 th,
 td {
     padding: 7px;
@@ -128,10 +123,7 @@ tr {
         font-weight: 300;
         line-height: 17px;
         letter-spacing: 0em;
-    
 }
-
-
 
 .back__button {
     position: fixed;
@@ -150,26 +142,22 @@ tr {
  .toucheble {
     position: relative;
 
-    &::after {
-        position: absolute;
-        display: block;
-        content: url('../../images/drinks/hand.png');
-        width: 16px;
-        height: 16px;
-        top: -17%;
-        left: 0;
-        animation: touch infinite 500ms;
-    }
-}
+    & span {
+        background: #00FF00;
+            background: linear-gradient(to right, #00FF00 0%, #00FFFF 100%);
+            color: #000;
+                background-clip: text;
+                background-size: 200% auto;
+                -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
 
-@keyframes touch {
-    0% {
-        transform: translate(-70%, 50%)rotate(90deg);
+            animation: shine 1s linear infinite;
+            
+                @keyframes shine {
+                    to {
+                        background-position: -200% center;
+                    }
+                }
     }
-    50% {
-        transform: translate(-90%, 50%) rotate(90deg);
-        }
-    100% {
-        transform: translate(-70%, 50%) rotate(90deg);
-        }
-}
+
+ }
