@@ -48,7 +48,7 @@ const data = [
   },
   {
     image: glintwain,
-    caption: "Глінтвейн червоний",
+    caption: "Глінтвейн",
   },
   {
     image: forestSpritz,
