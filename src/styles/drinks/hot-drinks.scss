@@ -139,25 +139,31 @@ tr {
 
 }
 
+
+
  .toucheble {
     position: relative;
 
-    & span {
-        background: #00FF00;
-            background: linear-gradient(to right, #00FF00 0%, #00FFFF 100%);
-            color: #000;
-                background-clip: text;
-                background-size: 200% auto;
-                -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+    &::after {
+        position: absolute;
+        display: block;
+        content: url('../../images/arrow-right.svg');
+        width: 10px;
+        height: auto;
+        right: 0;
+        top: 25%;
 
-            animation: shine 5s ease-in infinite;
-            
-                @keyframes shine {
-                    to {
-                        background-position: -200% center;
-                    }
-                }
+        animation: moving infinite 2000ms;
     }
 
+    @keyframes moving {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+    }
  }
