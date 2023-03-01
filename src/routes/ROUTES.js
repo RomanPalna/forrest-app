@@ -9,7 +9,7 @@ export const ROUTES = [
     title: "Коньяк, Бренді",
     types: ["Коньяки", "Бренді"],
     route: "/brandy-cognac",
-    format: "single",
+    format: "fifty",
   },
   {
     title: "Віскі",
