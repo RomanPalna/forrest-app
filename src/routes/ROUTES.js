@@ -70,7 +70,7 @@ export const ROUTES = [
   },
   {
     title: "коктейлі",
-    types: ["Коктейлі алкогольні"],
+    types: ["Коктейлі алкогольні", "Коктелі"],
     route: "/cocktails",
     format: "single",
     path: "cocktails",
@@ -79,6 +79,13 @@ export const ROUTES = [
     title: "Вино на розлив",
     types: ["Вино розлив"],
     route: "/glass-wine",
+    format: "glass",
+    path: "glass-wine",
+  },
+  {
+    title: "рожеві та кріплені вина",
+    types: [ "Рожеві","Кріплені"],
+    route: "/strong-wine",
     format: "glass",
     path: "glass-wine",
   },

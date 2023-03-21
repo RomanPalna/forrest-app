@@ -20,6 +20,8 @@ const ROUTES = [
   ["/white-wine", whiteWine, "Білі Вина"],
   ["/red-wine", redWine, "Червоні вина"],
   ["/glass-wine", glassWine, "Вино розлив"],
+  ["/strong-wine", glassWine, "Рожеві/кріплені"],
+
 ];
 
 export default function Alcohol() {
