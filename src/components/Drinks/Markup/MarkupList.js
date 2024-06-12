@@ -5,7 +5,7 @@ export default function MarkupList({ props, format, path }) {
     return price.price.currentPrice;
   });
 
-  console.log(path);
+  console.log(props.id);
 
   const ComponentPath = path ? (
     <td className="forrest__coffee--name toucheble">

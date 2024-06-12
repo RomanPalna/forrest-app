@@ -16,6 +16,7 @@ export const ROUTES = [
     types: ["Віскі"],
     route: "/whisky",
     format: "fifty",
+    path: "whisky",
   },
   {
     title: "Кава, чай",
@@ -67,6 +68,7 @@ export const ROUTES = [
     types: ["Роми", "Вермути", "Джини", "Текіли", "Лікери"],
     route: "/other-alco",
     format: "fifty",
+    path: "other-alco",
   },
   {
     title: "коктейлі",
@@ -84,9 +86,9 @@ export const ROUTES = [
   },
   {
     title: "рожеві та кріплені вина",
-    types: [ "Рожеві","Кріплені"],
+    types: ["Рожеві", "Кріплені"],
     route: "/strong-wine",
-    format: "glass",
-    path: "glass-wine",
+    format: "wine",
+    path: "strong-wine",
   },
 ];

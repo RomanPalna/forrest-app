@@ -13,7 +13,6 @@ function useMainMenu(groupNames) {
         method: "get",
         url: "https://forrest-server.herokuapp.com/",
       });
-
       if (response.data) {
         const products = response?.data?.products || [];
         const groups = response?.data?.groups || [];

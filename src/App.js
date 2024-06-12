@@ -37,6 +37,8 @@ function App() {
         <Route path="/sparkling-wine/:id" element={<ProductMarkup />} />
         <Route path="/red-wine/:id" element={<ProductMarkup />} />
         <Route path="/white-wine/:id" element={<ProductMarkup />} />
+        <Route path="/other-alco/:id" element={<ProductMarkup />} />
+
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
